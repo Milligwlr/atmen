@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://atmen.mx/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://atmen.mx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://atmen.mx/"/>
+  </url>
+  <url>
+    <loc>https://atmen.mx/sobre-el-doctor/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://atmen.mx/sobre-el-doctor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://atmen.mx/sobre-el-doctor/"/>
+  </url>
+  <!-- /aviso-de-privacidad/ es noindex, no se incluye en el sitemap. -->
+</urlset>

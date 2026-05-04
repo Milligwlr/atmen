@@ -1,0 +1,60 @@
+# robots.txt — Atmen · Dr. Robinson Robles, Neumólogo CDMX
+# Ver módulo 05 del playbook médico
+
+User-agent: *
+Allow: /
+Disallow: /_internal/
+Disallow: /admin/
+Disallow: /drafts/
+Disallow: /*?preview=true
+
+# Bots de IA generativa — whitelist explícita
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://atmen.mx/sitemap.xml
