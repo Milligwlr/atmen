@@ -73,10 +73,7 @@
         "reviewedBy": { "@id": "https://atmen.mx/#physician" },
         "specialty": "https://schema.org/Pulmonary",
         "audience": { "@type": "MedicalAudience", "audienceType": "Patient" },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://atmen.mx/images/og-home.svg"
-        },
+        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://atmen.mx/images/og-home.svg" },
         "about": [
           { "@id": "https://atmen.mx/#physician" },
           { "@id": "https://atmen.mx/#organization" }
@@ -127,38 +124,9 @@
           { "@type": "CollegeOrUniversity", "name": "Universidad Católica de Murcia (UCAM)", "url": "https://www.ucam.edu/" }
         ],
         "hasCredential": [
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Cédula Profesional de Médico Cirujano",
-            "credentialCategory": "license",
-            "identifier": "10431658",
-            "recognizedBy": {
-              "@type": "GovernmentOrganization",
-              "name": "Dirección General de Profesiones, Secretaría de Educación Pública (México)"
-            }
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Cédula de Especialidad en Neumología",
-            "credentialCategory": "license",
-            "identifier": "12440475",
-            "recognizedBy": {
-              "@type": "GovernmentOrganization",
-              "name": "Dirección General de Profesiones, Secretaría de Educación Pública (México)"
-            }
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Certificación vigente del Consejo Nacional de Neumología y Cirugía de Tórax",
-            "credentialCategory": "certification",
-            "identifier": "1509",
-            "validUntil": "2031-12-31",
-            "recognizedBy": {
-              "@type": "Organization",
-              "name": "Consejo Nacional de Neumología y Cirugía de Tórax",
-              "url": "https://consejonacionaldeneumologia.org/"
-            }
-          }
+          { "@type": "EducationalOccupationalCredential", "name": "Cédula Profesional de Médico Cirujano", "credentialCategory": "license", "identifier": "10431658", "recognizedBy": { "@type": "GovernmentOrganization", "name": "Dirección General de Profesiones, Secretaría de Educación Pública (México)" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Cédula de Especialidad en Neumología", "credentialCategory": "license", "identifier": "12440475", "recognizedBy": { "@type": "GovernmentOrganization", "name": "Dirección General de Profesiones, Secretaría de Educación Pública (México)" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Certificación vigente del Consejo Nacional de Neumología y Cirugía de Tórax", "credentialCategory": "certification", "identifier": "1509", "validUntil": "2031-12-31", "recognizedBy": { "@type": "Organization", "name": "Consejo Nacional de Neumología y Cirugía de Tórax", "url": "https://consejonacionaldeneumologia.org/" } }
         ],
         "sameAs": [
           "https://www.doctoralia.com.mx/robinson-robles/neumologo/ciudad-de-mexico",
@@ -179,107 +147,38 @@
         "currenciesAccepted": "MXN",
         "paymentAccepted": "Cash, Credit Card, Debit Card, Bank Transfer",
         "medicalSpecialty": "https://schema.org/Pulmonary",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Puente de Piedra 150, Torre 1, Consultorio 612",
-          "addressLocality": "Tlalpan",
-          "addressRegion": "CDMX",
-          "postalCode": "14050",
-          "addressCountry": "MX"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 19.292000,
-          "longitude": -99.173500
-        },
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 19.292000, "longitude": -99.173500 },
-          "geoRadius": "15000"
-        },
-        "containedInPlace": {
-          "@type": "Hospital",
-          "name": "Hospital Médica Sur",
-          "url": "https://www.medicasur.com.mx/"
-        },
+        "address": { "@type": "PostalAddress", "streetAddress": "Puente de Piedra 150, Torre 1, Consultorio 612", "addressLocality": "Tlalpan", "addressRegion": "CDMX", "postalCode": "14050", "addressCountry": "MX" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 19.292000, "longitude": -99.173500 },
+        "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 19.292000, "longitude": -99.173500 }, "geoRadius": "15000" },
+        "containedInPlace": { "@type": "Hospital", "name": "Hospital Médica Sur", "url": "https://www.medicasur.com.mx/" },
         "employee": { "@id": "https://atmen.mx/#physician" },
-        "sameAs": [
-          "https://www.doctoralia.com.mx/robinson-robles/neumologo/ciudad-de-mexico"
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "bestRating": "5",
-          "worstRating": "1",
-          "ratingCount": 128,
-          "reviewCount": 128,
-          "itemReviewed": { "@id": "https://atmen.mx/#organization" }
-        }
+        "sameAs": [ "https://www.doctoralia.com.mx/robinson-robles/neumologo/ciudad-de-mexico" ],
+        "aggregateRating": { "@type": "AggregateRating", "bestRating": "5", "worstRating": "1", "ratingCount": 128, "reviewCount": 128, "itemReviewed": { "@id": "https://atmen.mx/#organization" } }
       },
       {
         "@type": "FAQPage",
         "@id": "https://atmen.mx/#faq",
         "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Cuándo debo consultar a un neumólogo?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Debe consultar si presenta tos por más de 2-3 semanas, dificultad para respirar persistente, sibilancias recurrentes, ronquidos con pausas observadas durante el sueño, esputo con sangre o infecciones respiratorias frecuentes. También si tiene antecedente de tabaquismo o exposición laboral a humos y polvos, aunque no tenga síntomas evidentes."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Qué incluye la primera consulta?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Historia clínica completa enfocada en sistema respiratorio, exploración física dirigida, revisión de estudios previos si los trae, plan diagnóstico inicial y, si el caso lo requiere, indicación de espirometría u otros estudios que se realizan en Médica Sur. La consulta termina con un plan claro: qué tiene, qué estudios faltan y qué pasos seguir."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿El Dr. Robles atiende en mi seguro médico?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Atiende a las principales aseguradoras del país: GNP, AXA, MetLife, Bupa, Allianz, Seguros Monterrey, Zurich, MAPFRE y Atlas, entre otras. Recomendamos verificar cobertura con su aseguradora antes de la cita; el consultorio puede orientarle sobre el procedimiento de cobranza directa o reembolso según su póliza."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Hace teleconsulta?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí. Ofrece teleconsulta en español e inglés para seguimiento de enfermedades crónicas (asma, EPOC), interpretación de estudios previos y segunda opinión. La primera valoración se prefiere presencial cuando se requiere exploración física o estudios diagnósticos como espirometría."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Qué diferencia hay entre un neumólogo de práctica privada y uno hospitalario?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El Dr. Robles combina ambos roles: es investigador adscrito a la Clínica de Tabaquismo y EPOC del INER, donde participa activamente en la generación de evidencia clínica, y atiende su consulta privada en Médica Sur. Esto significa que la atención privada se basa en las mismas guías y protocolos que se aplican en el centro de referencia nacional, con tiempos de consulta y atención personalizada."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cómo agendar una cita?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Puede escribir por WhatsApp al teléfono del consultorio para coordinar día y hora, enviar un correo a contacto@atmen.mx con su motivo de consulta, o llamar directamente. Le confirmaremos disponibilidad en Médica Sur Torre 1 Consultorio 612, modalidad presencial o teleconsulta."
-            }
-          }
+          { "@type": "Question", "name": "¿Cuándo debo consultar a un neumólogo?", "acceptedAnswer": { "@type": "Answer", "text": "Debe consultar si presenta tos por más de 2-3 semanas, dificultad para respirar persistente, sibilancias recurrentes, ronquidos con pausas observadas durante el sueño, esputo con sangre o infecciones respiratorias frecuentes. También si tiene antecedente de tabaquismo o exposición laboral a humos y polvos." } },
+          { "@type": "Question", "name": "¿Qué incluye la primera consulta?", "acceptedAnswer": { "@type": "Answer", "text": "Historia clínica completa enfocada en sistema respiratorio, exploración física dirigida, revisión de estudios previos, plan diagnóstico inicial y, si el caso lo requiere, indicación de espirometría u otros estudios disponibles en Médica Sur. La consulta termina con un plan claro: qué tiene, qué estudios faltan y qué pasos seguir." } },
+          { "@type": "Question", "name": "¿El Dr. Robles atiende mi seguro médico?", "acceptedAnswer": { "@type": "Answer", "text": "Atiende a las principales aseguradoras del país: GNP, AXA, MetLife, Bupa, Allianz, Seguros Monterrey, Zurich, MAPFRE y Atlas, entre otras. Recomendamos verificar cobertura con su aseguradora antes de la cita." } },
+          { "@type": "Question", "name": "¿Hace teleconsulta?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Ofrece teleconsulta en español e inglés para seguimiento de enfermedades crónicas, interpretación de estudios previos y segunda opinión. La primera valoración se prefiere presencial cuando se requiere exploración física o estudios diagnósticos." } },
+          { "@type": "Question", "name": "¿Qué diferencia hay entre un neumólogo de práctica privada y uno hospitalario?", "acceptedAnswer": { "@type": "Answer", "text": "El Dr. Robles combina ambos roles: es investigador adscrito a la Clínica de Tabaquismo y EPOC del INER y atiende su consulta privada en Médica Sur. La atención privada se apoya en las mismas guías y protocolos del centro de referencia nacional." } },
+          { "@type": "Question", "name": "¿Cómo agendar una cita?", "acceptedAnswer": { "@type": "Answer", "text": "Puede escribir por WhatsApp al teléfono del consultorio, enviar correo a contacto@atmen.mx con su motivo de consulta o llamar directamente. Confirmamos disponibilidad en Médica Sur Torre 1 Consultorio 612, modalidad presencial o teleconsulta." } }
         ]
       }
     ]
   }
   </script>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,500;1,600&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,500;1,600;1,700&display=swap" media="print" onload="this.media='all'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,500;1,600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,500;1,600;1,700&display=swap">
   </noscript>
 
   <link rel="stylesheet" href="/css/tokens.css">
   <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/premium.css">
 </head>
 <body>
   <script>document.body.classList.add('js-enabled');</script>
@@ -287,7 +186,7 @@
   <a class="skip-link" href="#main">Saltar al contenido principal</a>
 
   <div class="top-bar-legal" role="region" aria-label="Cumplimiento sanitario">
-    <span>Aviso COFEPRIS Modalidad A: <strong id="EN-TRAMITE-COFEPRIS">en trámite ante DIGIPRiS</strong></span>
+    <span>Aviso COFEPRIS Modalidad A: <strong>en trámite ante DIGIPRiS</strong></span>
     <span class="sep" aria-hidden="true">|</span>
     <span>Cédula Profesional <a href="https://www.cedulaprofesional.sep.gob.mx/" rel="external noopener">10431658</a></span>
     <span class="sep" aria-hidden="true">|</span>
@@ -304,21 +203,17 @@
         </span>
         <span>Atmen <span class="navbar__brand-suffix">· Dr. Robinson Robles</span></span>
       </a>
-      <button class="navbar__toggler" type="button"
-              aria-label="Abrir menú de navegación"
-              aria-expanded="false"
-              aria-controls="navMenu">
+      <button class="navbar__toggler" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
         <span class="bar" aria-hidden="true"></span>
         <span class="bar" aria-hidden="true"></span>
         <span class="bar" aria-hidden="true"></span>
       </button>
       <ul class="navbar__menu" id="navMenu">
         <li><a href="/sobre-el-doctor/">Sobre el doctor</a></li>
-        <li><a href="#areas">Áreas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="/preguntas-frecuentes/">Preguntas frecuentes</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
         <li>
-          <a class="btn btn--primary navbar__cta"
-             href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa.">
+          <a class="btn btn--primary btn-pro navbar__cta" href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa.">
             Agendar consulta
           </a>
         </li>
@@ -326,369 +221,388 @@
     </div>
   </nav>
 
-  <a class="whatsapp-float"
-     href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa."
-     aria-label="Abrir WhatsApp para agendar consulta">
+  <a class="whatsapp-float" href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa." aria-label="Abrir WhatsApp para agendar consulta">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M17.6 14.3c-.3-.1-1.7-.8-1.9-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1s-.3.2-.6.1c-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.9 2.9 4.6 4.1 2.7 1.1 2.7.7 3.2.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.5 5.9L0 24l6.3-1.7C8 23.4 9.9 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0zm0 22c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-3.7 1 1-3.6-.2-.4C2.5 15.7 2 13.9 2 12 2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z"/>
+      <path d="M17.6 14.3c-.3-.1-1.7-.8-1.9-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1s-.3.2-.6.1c-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.9 2.9 4.6 4.1 2.7 1.1 2.7.7 3.2.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.5 5.9L0 24l6.3-1.7C8 23.4 9.9 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/>
     </svg>
   </a>
 
   <main id="main">
 
-    <!-- ===== HERO ===== -->
-    <section class="hero">
-      <div class="hero__container">
-        <div class="hero__copy">
-          <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Neumólogo investigador · INER + Médica Sur</span>
-          <h1 class="hero__headline">Neumología basada en <em>evidencia.</em></h1>
-          <p class="hero__lead">
-            Soy el <strong>Dr. Robinson Robles</strong>. Atiendo asma, EPOC, apnea del sueño, tabaquismo y secuelas respiratorias post-COVID con la misma evidencia que aplico como investigador adscrito a la Clínica de Tabaquismo y EPOC del INER. Diagnóstico claro, plan explicado paso a paso, acompañamiento.
+    <!-- ===== HERO PRO ===== -->
+    <section class="hero-pro">
+      <div class="hero-pro__container">
+        <div class="hero-pro__copy">
+          <span class="badge-pill"><span class="pulse" aria-hidden="true"></span>Neumólogo investigador · INER + Médica Sur</span>
+          <h1 class="headline-pro">Neumología<br>basada en <em>evidencia.</em></h1>
+          <p class="lead-pro">
+            Soy el <strong>Dr. Robinson Robles</strong>. Atiendo asma, EPOC, apnea del sueño, tabaquismo y secuelas respiratorias post-COVID con la misma evidencia que aplico como investigador adscrito a la Clínica de Tabaquismo y EPOC del INER.
           </p>
 
-          <div class="hero__stats" role="list">
-            <div class="stat" role="listitem">
-              <span class="stat__num">h&#8209;7</span>
-              <span class="stat__label">Scholar h-index</span>
+          <div class="stats-row" role="list">
+            <div role="listitem">
+              <span class="stat-pro__num">h&#8209;7</span>
+              <span class="stat-pro__label">Scholar h-index</span>
             </div>
-            <div class="stat" role="listitem">
-              <span class="stat__num">143</span>
-              <span class="stat__label">Citas indexadas</span>
+            <div role="listitem">
+              <span class="stat-pro__num">143</span>
+              <span class="stat-pro__label">Citas indexadas</span>
             </div>
-            <div class="stat" role="listitem">
-              <span class="stat__num">128</span>
-              <span class="stat__label">Reseñas verificadas</span>
+            <div role="listitem">
+              <span class="stat-pro__num">128</span>
+              <span class="stat-pro__label">Reseñas verificadas</span>
             </div>
           </div>
 
           <div class="hero__cta">
-            <a class="btn btn--whatsapp btn--lg"
-               href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa.">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                <path d="M17.6 14.3c-.3-.1-1.7-.8-1.9-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1s-.3.2-.6.1c-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.9 2.9 4.6 4.1 2.7 1.1 2.7.7 3.2.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.5 5.9L0 24l6.3-1.7C8 23.4 9.9 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/>
-              </svg>
+            <a class="btn btn--whatsapp btn--lg btn-pro" href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa.">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.6 14.3c-.3-.1-1.7-.8-1.9-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1s-.3.2-.6.1c-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.9 2.9 4.6 4.1 2.7 1.1 2.7.7 3.2.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.5 5.9L0 24l6.3-1.7C8 23.4 9.9 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
               Agendar por WhatsApp
             </a>
-            <a class="btn btn--ghost btn--lg" href="mailto:contacto@atmen.mx?subject=Solicitud%20de%20cita%20-%20Neumolog%C3%ADa">Escribir por correo</a>
+            <a class="btn btn--ghost btn--lg" href="/contacto/">Otros canales</a>
           </div>
 
-          <div class="hero__pills" aria-label="Áreas que atiende el doctor">
-            <span class="hero__pills-label">Atiende:</span>
-            <a class="pill" href="#areas">Asma</a>
-            <a class="pill" href="#areas">EPOC</a>
-            <a class="pill" href="#areas">Apnea del sueño</a>
-            <a class="pill" href="#areas">Tabaquismo y vapeo</a>
-            <a class="pill" href="#areas">Secuelas post-COVID</a>
-            <a class="pill" href="#areas">Tos crónica</a>
+          <div class="tag-pills" aria-label="Áreas que atiende">
+            <a class="tag-pill" href="#areas">Asma</a>
+            <a class="tag-pill" href="#areas">EPOC</a>
+            <a class="tag-pill" href="#areas">Apnea del sueño</a>
+            <a class="tag-pill" href="#areas">Tabaquismo y vapeo</a>
+            <a class="tag-pill" href="#areas">Secuelas post-COVID</a>
+            <a class="tag-pill" href="#areas">Tos crónica</a>
           </div>
         </div>
 
-        <div class="hero__visual">
-          <div class="portrait-frame">
-            <div class="portrait-frame__halo" aria-hidden="true"></div>
-            <img class="portrait-svg"
-                 src="/images/doctor-portrait.svg"
-                 alt="Dr. Robinson Robles, neumólogo en Ciudad de México, retrato profesional placeholder"
-                 width="400" height="500"
-                 fetchpriority="high"
-                 decoding="async">
-            <div class="portrait-frame__credentials" aria-hidden="true">
-              <span class="cred-chip">CP 10431658</span>
-              <span class="cred-chip">CNN 1509</span>
+        <div class="hero-pro__visual">
+          <div class="portrait-pro">
+            <div class="portrait-pro__halo" aria-hidden="true"></div>
+            <div class="portrait-pro__ring">
+              <div class="portrait-pro__inner">
+                <img src="/images/doctor-portrait.svg"
+                     alt="Dr. Robinson Robles, neumólogo en Ciudad de México, retrato profesional placeholder"
+                     width="400" height="500"
+                     fetchpriority="high"
+                     decoding="async">
+                <div class="portrait-pro__creds" aria-hidden="true">
+                  <span class="cred-glass">CP 10431658</span>
+                  <span class="cred-glass">CNN 1509</span>
+                </div>
+                <p class="portrait-pro__chip">Adscrito a la Clínica de Tabaquismo y EPOC, INER · Consulta privada en Médica Sur.</p>
+              </div>
             </div>
-            <p class="portrait-frame__caption">Adscrito a la Clínica de Tabaquismo y EPOC, INER · Consulta privada en Médica Sur.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== ÁREAS DE ATENCIÓN ===== -->
-    <section class="section" id="areas" style="background: var(--cloud);">
+    <!-- ===== Marquee instituciones ===== -->
+    <div class="marquee" role="region" aria-label="Instituciones de respaldo">
+      <div class="marquee__track">
+        <span class="marquee__item"><span class="dot" aria-hidden="true"></span>INSTITUTO NACIONAL DE ENFERMEDADES RESPIRATORIAS</span>
+        <span class="marquee__item"><span class="dot" aria-hidden="true"></span>HOSPITAL MÉDICA SUR</span>
+        <span class="marquee__item"><span class="dot" aria-hidden="true"></span>UNAM</span>
+        <span class="marquee__item"><span class="dot" aria-hidden="true"></span>UNIVERSIDAD CATÓLICA DE MURCIA</span>
+        <span class="marquee__item"><span class="dot" aria-hidden="true"></span>ALAT</span>
+        <span class="marquee__item"><span class="dot" aria-hidden="true"></span>ERS</span>
+        <span class="marquee__item"><span class="dot" aria-hidden="true"></span>SMNyCT</span>
+        <span class="marquee__item"><span class="dot" aria-hidden="true"></span>SEPAR</span>
+        <!-- duplicate para loop continuo -->
+        <span class="marquee__item" aria-hidden="true"><span class="dot"></span>INSTITUTO NACIONAL DE ENFERMEDADES RESPIRATORIAS</span>
+        <span class="marquee__item" aria-hidden="true"><span class="dot"></span>HOSPITAL MÉDICA SUR</span>
+        <span class="marquee__item" aria-hidden="true"><span class="dot"></span>UNAM</span>
+        <span class="marquee__item" aria-hidden="true"><span class="dot"></span>UNIVERSIDAD CATÓLICA DE MURCIA</span>
+        <span class="marquee__item" aria-hidden="true"><span class="dot"></span>ALAT</span>
+        <span class="marquee__item" aria-hidden="true"><span class="dot"></span>ERS</span>
+        <span class="marquee__item" aria-hidden="true"><span class="dot"></span>SMNyCT</span>
+        <span class="marquee__item" aria-hidden="true"><span class="dot"></span>SEPAR</span>
+      </div>
+    </div>
+
+    <!-- ===== ÁREAS - Bento grid ===== -->
+    <section class="section" id="areas">
       <div class="container">
-        <div class="reveal-up" style="text-align: center; max-width: 720px; margin: 0 auto var(--sp-7);">
-          <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Áreas que atiendo</span>
-          <h2>Neumología clínica con foco en cuatro frentes</h2>
-          <p class="lead" style="margin: 0 auto;">
-            Estos son los motivos de consulta más frecuentes en mi práctica. Cada uno tendrá próximamente su página dedicada con síntomas, diagnóstico y tratamiento alineados a guías internacionales.
-          </p>
+        <div class="section-head reveal-up">
+          <span class="badge-pill"><span class="pulse" aria-hidden="true"></span>Áreas que atiendo</span>
+          <h2>Neumología clínica con foco en <em>cuatro frentes.</em></h2>
+          <p>Estos son los motivos de consulta más frecuentes en mi práctica. Todos se atienden con base en guías internacionales (GINA, GOLD, AASM, ATS) y protocolos del INER.</p>
         </div>
 
-        <div class="grid grid-4">
-          <article class="card reveal-up">
-            <div class="card__icon" aria-hidden="true">
+        <div class="bento">
+
+          <!-- Tile destacado: investigador -->
+          <div class="bento-feature bento-lg reveal-up">
+            <div>
+              <span class="badge-pill" style="background: rgba(255,255,255,.1); color:#fff; border-color: rgba(255,255,255,.2);">
+                <span class="pulse" aria-hidden="true"></span>Investigación activa
+              </span>
+              <h3>Práctica clínica respaldada por evidencia generada en el INER.</h3>
+              <p>Las decisiones que tomo en consulta se apoyan en la misma evidencia que reviso, genero y publico. Maestría en EPOC por la UCAM y publicaciones indexadas con énfasis en EPOC, tabaquismo y secuelas respiratorias post-COVID.</p>
+            </div>
+            <div class="bento-feature__metrics">
+              <div class="bento-feature__metric"><strong>h-7</strong><span>Scholar h-index</span></div>
+              <div class="bento-feature__metric"><strong>143</strong><span>Citas indexadas</span></div>
+              <div class="bento-feature__metric"><strong>10+</strong><span>Publicaciones</span></div>
+            </div>
+          </div>
+
+          <article class="bento-card reveal-up">
+            <div class="bento-card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9v6c0 4 3 7 7 7s7-3 7-7V9c0-4-3-7-7-7zm-1 14h2v3h-2zm-2-4h6v2H9z"/></svg>
             </div>
-            <h3 class="card__title">Asma</h3>
-            <p class="card__desc">Diagnóstico con espirometría y plan de control alineado a guías GINA. Para asma de difícil control, valoración de fenotipo y biomarcadores.</p>
+            <h3 class="bento-card__title">Asma</h3>
+            <p class="bento-card__desc">Diagnóstico con espirometría y plan de control alineado a guías GINA. Para casos de difícil control, valoración de fenotipo y biomarcadores.</p>
+            <p class="bento-card__hint">Guía GINA →</p>
           </article>
 
-          <article class="card card--leaf reveal-up">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9c-2 0-4-.7-5.5-1.8L3 21V12zm5-2v4l3-2zm5 0v4l3-2z"/></svg>
+          <article class="bento-card bento-card--leaf reveal-up">
+            <div class="bento-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9c-2 0-4-.7-5.5-1.8L3 21V12z"/></svg>
             </div>
-            <h3 class="card__title">EPOC</h3>
-            <p class="card__desc">Diagnóstico con espirometría post-broncodilatador y manejo escalonado según GOLD. Investigación activa en EPOC: maestría por la UCAM y publicaciones indexadas.</p>
+            <h3 class="bento-card__title">EPOC</h3>
+            <p class="bento-card__desc">Diagnóstico con espirometría post-broncodilatador y manejo escalonado según GOLD. Línea de investigación activa en EPOC.</p>
+            <p class="bento-card__hint">Guía GOLD →</p>
           </article>
 
-          <article class="card reveal-up">
-            <div class="card__icon" aria-hidden="true">
+          <article class="bento-card reveal-up">
+            <div class="bento-card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7 2 3 6 3 11c0 3 1.5 5.5 4 7v4h2v-3c1 .3 2 .5 3 .5s2-.2 3-.5v3h2v-4c2.5-1.5 4-4 4-7 0-5-4-9-9-9zm-1 6h2v6h-2z"/></svg>
             </div>
-            <h3 class="card__title">Apnea del sueño</h3>
-            <p class="card__desc">Tamizaje, poligrafía respiratoria y titulación de presión positiva para casos confirmados. Atención coordinada con cardiología y otorrinolaringología cuando aplica.</p>
+            <h3 class="bento-card__title">Apnea del sueño</h3>
+            <p class="bento-card__desc">Tamizaje, poligrafía respiratoria y titulación de presión positiva. Atención coordinada con cardiología y otorrinolaringología cuando aplica.</p>
+            <p class="bento-card__hint">Guía AASM →</p>
           </article>
 
-          <article class="card card--leaf reveal-up">
-            <div class="card__icon" aria-hidden="true">
+          <article class="bento-card bento-card--leaf reveal-up">
+            <div class="bento-card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 5h14v2H5zm0 4h14v6H5zm2 8h10v2H7z"/></svg>
             </div>
-            <h3 class="card__title">Tabaquismo y vapeo</h3>
-            <p class="card__desc">Manejo médico del cese de tabaco y vapeo con base en evidencia. Adscripción institucional a la Clínica de Tabaquismo y EPOC del INER, centro de referencia nacional.</p>
+            <h3 class="bento-card__title">Tabaquismo y vapeo</h3>
+            <p class="bento-card__desc">Manejo médico del cese de tabaco y vapeo. Adscripción al INER, centro federal de referencia.</p>
+            <p class="bento-card__hint">Clínica INER →</p>
           </article>
-        </div>
 
-        <p class="muted" style="text-align: center; margin-top: var(--sp-7); font-size: .9rem;">
-          También atiendo neumonía adquirida en la comunidad, secuelas respiratorias post-COVID, tos crónica de etiología por aclarar, hemoptisis, derrames pleurales y enfermedades intersticiales.
-        </p>
+          <article class="bento-card bento-wide reveal-up">
+            <div class="bento-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.6 8 11 4.6-1.4 8-6 8-11V5z"/></svg>
+            </div>
+            <h3 class="bento-card__title">Secuelas respiratorias post-COVID, neumonía, derrames pleurales y enfermedades intersticiales</h3>
+            <p class="bento-card__desc">También atiendo cuadros menos frecuentes que requieren valoración por especialidad: tos crónica de etiología por aclarar, hemoptisis, sospecha de bronquiectasias, neumopatías ocupacionales, hipertensión pulmonar y casos de difícil clasificación.</p>
+          </article>
+
+        </div>
       </div>
     </section>
 
-    <!-- ===== FILOSOFÍA / CÓMO ABORDO CADA CASO ===== -->
-    <section class="section">
+    <div class="divider-pro"></div>
+
+    <!-- ===== Filosofía / Cómo abordo ===== -->
+    <section class="section" style="background: linear-gradient(180deg, var(--paper) 0%, var(--cloud) 100%);">
       <div class="container">
-        <div class="reveal-up" style="max-width: 760px; margin: 0 auto var(--sp-7); text-align: center;">
-          <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Cómo abordo cada caso</span>
-          <h2>Experiencia, empatía y transparencia.</h2>
-          <p class="lead" style="margin: 0 auto;">
-            Enfrentar una enfermedad pulmonar genera dudas y temores. Mi trabajo es traducirlos en información clara y un plan que pueda explicarse, ajustarse y seguirse.
-          </p>
+        <div class="section-head reveal-up">
+          <span class="badge-pill"><span class="pulse" aria-hidden="true"></span>Cómo abordo cada caso</span>
+          <h2>Experiencia, empatía y <em>transparencia.</em></h2>
+          <p>Enfrentar una enfermedad pulmonar genera dudas y temores. Mi trabajo es traducirlos en información clara y un plan que pueda explicarse, ajustarse y seguirse.</p>
         </div>
 
         <div class="grid grid-3">
-          <article class="pillar reveal-up">
-            <div class="pillar__num" aria-hidden="true">1</div>
-            <div>
-              <h3>Evaluación basada en evidencia</h3>
-              <p>Historia clínica orientada al sistema respiratorio, exploración física dirigida y solicitud de estudios solo cuando aportan información que cambia el manejo.</p>
+          <article class="bento-card glass reveal-up">
+            <div class="bento-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 5h2v6l5 3-1 1.7L11 14z"/></svg>
             </div>
+            <h3 class="bento-card__title">1 · Evaluación basada en evidencia</h3>
+            <p class="bento-card__desc">Historia clínica orientada al sistema respiratorio, exploración física dirigida y solicitud de estudios solo cuando aportan información que cambia el manejo.</p>
           </article>
 
-          <article class="pillar reveal-up">
-            <div class="pillar__num" aria-hidden="true">2</div>
-            <div>
-              <h3>Diagnóstico claro y explicado</h3>
-              <p>Cada paciente sale de consulta sabiendo qué tiene, por qué lo tiene y qué hace cada parte del tratamiento. Sin jerga innecesaria, sin promesas sin sustento.</p>
+          <article class="bento-card glass reveal-up">
+            <div class="bento-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h12v2H3z"/></svg>
             </div>
+            <h3 class="bento-card__title">2 · Diagnóstico claro y explicado</h3>
+            <p class="bento-card__desc">Cada paciente sale de consulta sabiendo qué tiene, por qué lo tiene y qué hace cada parte del tratamiento. Sin jerga innecesaria, sin promesas sin sustento.</p>
           </article>
 
-          <article class="pillar reveal-up">
-            <div class="pillar__num" aria-hidden="true">3</div>
-            <div>
-              <h3>Acompañamiento real</h3>
-              <p>Las enfermedades respiratorias son crónicas en la mayoría de los casos. El plan se ajusta en cada control con base en cómo se siente el paciente, los estudios y la evidencia más reciente.</p>
+          <article class="bento-card glass reveal-up">
+            <div class="bento-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm4 11h-3v3h-2v-3H8v-2h3V8h2v3h3z"/></svg>
             </div>
+            <h3 class="bento-card__title">3 · Acompañamiento real</h3>
+            <p class="bento-card__desc">Las enfermedades respiratorias son crónicas en la mayoría de los casos. El plan se ajusta en cada control con base en cómo se siente el paciente, los estudios y la evidencia más reciente.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== SOBRE EL DOCTOR PREVIEW ===== -->
-    <section class="section" style="background: var(--cloud);">
-      <div class="container">
-        <div class="bio-narrative">
-          <div class="reveal-up">
-            <div class="portrait-frame" style="max-width: 360px; margin: 0 auto;">
-              <div class="portrait-frame__halo" aria-hidden="true"></div>
-              <img src="/images/doctor-portrait.svg"
-                   alt="Dr. Robinson Robles, retrato profesional placeholder"
-                   width="400" height="500"
-                   loading="lazy" decoding="async">
-            </div>
-          </div>
-          <div class="reveal-up">
-            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Sobre el doctor</span>
-            <h2>Investigador clínico, no solo consulta privada.</h2>
-            <p>
-              Realicé la residencia en Neumología en el INER (UNAM, 2017-2020) y una maestría en EPOC por la Universidad Católica de Murcia. Mantengo línea de investigación activa con un h-index de <strong>7</strong> y <strong>143 citas</strong> indexadas en Google Scholar, con publicaciones sobre fisiopatología bronquial, EPOC, secuelas post-COVID y tabaquismo.
-            </p>
-            <p>
-              Eso significa que la atención que doy en consulta privada en Médica Sur se basa en las mismas guías y protocolos que aplico en el INER, con la ventaja de tiempos de consulta y seguimiento personalizado. Soy miembro de <strong>ALAT</strong>, <strong>ERS</strong>, <strong>SMNyCT</strong> y <strong>SEPAR</strong>.
-            </p>
-            <p>
-              <a href="/sobre-el-doctor/" class="btn btn--ghost">Conocer formación y publicaciones</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== RESEÑAS (AggregateRating + link a fuente) ===== -->
+    <!-- ===== Reseñas ===== -->
     <section class="section">
       <div class="container">
-        <div class="reveal-up" style="text-align: center; max-width: 760px; margin: 0 auto var(--sp-6);">
-          <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Lo que dicen los pacientes</span>
-          <h2>Reseñas verificadas en Doctoralia</h2>
+        <div class="section-head reveal-up">
+          <span class="badge-pill"><span class="pulse" aria-hidden="true"></span>Confianza de pacientes</span>
+          <h2>Reseñas verificadas en <em>Doctoralia.</em></h2>
         </div>
-        <div class="reviews reveal-up">
-          <div class="reviews__rating">
-            <div class="reviews__count">128</div>
-            <div class="reviews__count-label">reseñas de pacientes</div>
-            <div class="reviews__source">
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              Verificadas por Doctoralia
-            </div>
-            <div class="reviews__cta">
-              <a class="btn btn--primary" href="https://www.doctoralia.com.mx/robinson-robles/neumologo/ciudad-de-mexico" rel="external noopener">
+
+        <div class="reviews-pro reveal-up">
+          <div class="grid grid-2" style="gap: clamp(28px, 4vw, 56px); align-items: center;">
+            <div>
+              <span class="reviews-pro__big">128</span>
+              <p style="font-size: 1rem; color: var(--ink-muted); margin: 12px 0 22px;">reseñas verificadas por la plataforma · sin testimonios fabricados, sin retoques.</p>
+              <a class="btn btn--primary btn-pro" href="https://www.doctoralia.com.mx/robinson-robles/neumologo/ciudad-de-mexico" rel="external noopener">
                 Ver reseñas en Doctoralia
               </a>
+              <p class="muted" style="font-size: .78rem; margin-top: 18px;">
+                Por cumplimiento COFEPRIS no publicamos testimonios individuales en este sitio. La fuente verificable es la plataforma externa.
+              </p>
             </div>
-          </div>
-          <div class="reviews__why">
-            <h3>Por qué consultar al Dr. Robles</h3>
-            <ul>
-              <li><strong>Investigador adscrito al INER</strong> — la práctica privada se basa en protocolos del centro de referencia nacional respiratorio.</li>
-              <li><strong>Maestría en EPOC por UCAM</strong> y publicaciones indexadas con énfasis en EPOC, tabaquismo y post-COVID.</li>
+            <ul class="feat-list">
+              <li><strong>Investigador adscrito al INER.</strong> La práctica privada se basa en protocolos del centro federal de referencia respiratorio.</li>
+              <li><strong>Maestría en EPOC por UCAM</strong> y publicaciones indexadas en EPOC, tabaquismo y secuelas post-COVID.</li>
               <li><strong>Atención presencial y teleconsulta</strong> en español e inglés. Acepta GNP, AXA, MetLife, Bupa, Allianz y otras.</li>
               <li><strong>Cédulas verificables ante la SEP</strong>: profesional 10431658, especialidad 12440475, certificación CNN 1509 vigente hasta 2031.</li>
             </ul>
           </div>
         </div>
-        <p class="muted" style="text-align: center; margin-top: var(--sp-5); font-size: .82rem; max-width: 720px; margin-inline: auto;">
-          Por cumplimiento de la regulación COFEPRIS no publicamos testimonios individuales en este sitio. Las reseñas se consultan en la fuente verificable (Doctoralia), donde Doctoralia valida la identidad del autor.
-        </p>
+      </div>
+    </section>
+
+    <div class="divider-pro"></div>
+
+    <!-- ===== Bio preview ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="bio-narrative">
+          <div class="reveal-up">
+            <div class="portrait-pro" style="max-width: 380px;">
+              <div class="portrait-pro__halo" aria-hidden="true"></div>
+              <div class="portrait-pro__ring">
+                <div class="portrait-pro__inner">
+                  <img src="/images/doctor-portrait.svg" alt="Dr. Robinson Robles, retrato profesional placeholder" width="400" height="500" loading="lazy" decoding="async">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reveal-up">
+            <span class="badge-pill"><span class="pulse" aria-hidden="true"></span>Sobre el doctor</span>
+            <h2 style="font-size: clamp(1.8rem, 2.4vw, 2.4rem); letter-spacing: -.02em; margin: 16px 0 16px;">Investigador clínico, no <em style="font-style: italic; font-family: var(--font-serif); color: var(--sea);">solo</em> consulta privada.</h2>
+            <p>
+              Realicé la residencia en Neumología en el INER (UNAM, 2017-2020) y maestría en EPOC por la Universidad Católica de Murcia. Mantengo línea de investigación activa con un h-index de <strong>7</strong> y <strong>143 citas</strong> indexadas en Google Scholar.
+            </p>
+            <p>
+              La atención que doy en consulta privada en Médica Sur se basa en las mismas guías y protocolos que aplico en el INER, con la ventaja de tiempos de consulta y seguimiento personalizado. Soy miembro de <strong>ALAT</strong>, <strong>ERS</strong>, <strong>SMNyCT</strong> y <strong>SEPAR</strong>.
+            </p>
+            <a href="/sobre-el-doctor/" class="btn btn--ghost btn--lg" style="margin-top: 12px;">Conocer formación y publicaciones</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ===== FAQ ===== -->
-    <section class="section" style="background: var(--cloud);">
+    <section class="section" style="background: linear-gradient(180deg, var(--paper) 0%, var(--cloud) 100%);">
       <div class="container container--narrow">
-        <div class="reveal-up" style="text-align: center; margin-bottom: var(--sp-6);">
-          <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Preguntas frecuentes</span>
-          <h2>Lo que más me preguntan en consulta</h2>
+        <div class="section-head reveal-up">
+          <span class="badge-pill"><span class="pulse" aria-hidden="true"></span>Preguntas frecuentes</span>
+          <h2>Lo que más me preguntan en <em>consulta.</em></h2>
         </div>
 
-        <details class="faq-item reveal-up" open>
+        <details class="faq-pro reveal-up" open>
           <summary>¿Cuándo debo consultar a un neumólogo?</summary>
-          <div class="faq-item__body">
+          <div class="faq-pro__body">
             <p>Debe consultar si presenta tos por más de 2-3 semanas, dificultad para respirar persistente, sibilancias recurrentes, ronquidos con pausas observadas durante el sueño, esputo con sangre o infecciones respiratorias frecuentes.</p>
             <p>También si tiene antecedente de tabaquismo o exposición laboral a humos y polvos, aunque no tenga síntomas evidentes — la EPOC puede estar presente con función pulmonar ya alterada y muy pocos síntomas.</p>
           </div>
         </details>
 
-        <details class="faq-item reveal-up">
+        <details class="faq-pro reveal-up">
           <summary>¿Qué incluye la primera consulta?</summary>
-          <div class="faq-item__body">
+          <div class="faq-pro__body">
             <p>Historia clínica completa enfocada en el sistema respiratorio, exploración física dirigida, revisión de estudios previos si los trae, plan diagnóstico inicial y, si el caso lo requiere, indicación de espirometría u otros estudios disponibles en Médica Sur.</p>
             <p>La consulta termina con un plan claro: qué tiene, qué estudios faltan y qué pasos seguir.</p>
           </div>
         </details>
 
-        <details class="faq-item reveal-up">
+        <details class="faq-pro reveal-up">
           <summary>¿El Dr. Robles atiende mi seguro médico?</summary>
-          <div class="faq-item__body">
+          <div class="faq-pro__body">
             <p>Atiende a las principales aseguradoras del país: <strong>GNP, AXA, MetLife, Bupa, Allianz, Seguros Monterrey, Zurich, MAPFRE y Atlas</strong>, entre otras.</p>
-            <p>Recomendamos verificar cobertura con su aseguradora antes de la cita; el consultorio puede orientarle sobre cobranza directa o reembolso según su póliza.</p>
+            <p>Recomendamos verificar cobertura con su aseguradora antes de la cita.</p>
           </div>
         </details>
 
-        <details class="faq-item reveal-up">
+        <details class="faq-pro reveal-up">
           <summary>¿Hace teleconsulta?</summary>
-          <div class="faq-item__body">
+          <div class="faq-pro__body">
             <p>Sí. Ofrece teleconsulta en español e inglés para seguimiento de enfermedades crónicas (asma, EPOC), interpretación de estudios previos y segunda opinión.</p>
             <p>La primera valoración se prefiere presencial cuando se requiere exploración física o estudios diagnósticos como espirometría.</p>
           </div>
         </details>
 
-        <details class="faq-item reveal-up">
+        <details class="faq-pro reveal-up">
           <summary>¿Qué diferencia hay entre un neumólogo de práctica privada y uno hospitalario?</summary>
-          <div class="faq-item__body">
-            <p>El Dr. Robles combina ambos roles: es investigador adscrito a la <strong>Clínica de Tabaquismo y EPOC del INER</strong>, donde participa en la generación de evidencia clínica, y atiende su consulta privada en <strong>Médica Sur</strong>.</p>
-            <p>La atención privada se apoya en las mismas guías y protocolos del centro de referencia nacional, con tiempos de consulta y seguimiento personalizado.</p>
+          <div class="faq-pro__body">
+            <p>El Dr. Robles combina ambos roles: investigador adscrito a la <strong>Clínica de Tabaquismo y EPOC del INER</strong> y consulta privada en <strong>Médica Sur</strong>.</p>
+            <p>La atención privada se apoya en las mismas guías del centro de referencia nacional, con tiempos de consulta y seguimiento personalizado.</p>
           </div>
         </details>
 
-        <details class="faq-item reveal-up">
+        <details class="faq-pro reveal-up">
           <summary>¿Cómo agendar una cita?</summary>
-          <div class="faq-item__body">
-            <p>Puede escribir por <a href="https://wa.me/5215614838970">WhatsApp</a> al teléfono del consultorio para coordinar día y hora, enviar correo a <a href="mailto:contacto@atmen.mx">contacto@atmen.mx</a> con su motivo de consulta, o llamar directamente al <a href="tel:+5215614838970">56 1483 8970</a>.</p>
-            <p>Le confirmaremos disponibilidad en Médica Sur, Torre 1, Consultorio 612, en modalidad presencial o teleconsulta.</p>
+          <div class="faq-pro__body">
+            <p>Puede escribir por <a href="https://wa.me/5215614838970">WhatsApp</a> al teléfono del consultorio, enviar correo a <a href="mailto:contacto@atmen.mx">contacto@atmen.mx</a> o llamar al <a href="tel:+5215614838970">56 1483 8970</a>.</p>
+            <p>Confirmamos disponibilidad en Médica Sur, Torre 1, Consultorio 612, modalidad presencial o teleconsulta.</p>
           </div>
         </details>
+
+        <p style="text-align: center; margin-top: 32px;">
+          <a class="btn btn--ghost" href="/preguntas-frecuentes/">Ver preguntas frecuentes ampliadas</a>
+        </p>
       </div>
     </section>
 
-    <!-- ===== CTA BAND ===== -->
+    <!-- ===== CTA aurora ===== -->
     <section class="section">
       <div class="container">
-        <div class="cta-band reveal-up">
+        <div class="cta-aurora reveal-up">
           <h2>Cuando tu respiración importa, no esperes.</h2>
           <p>Si llevas semanas con tos, te ahogas con esfuerzos que antes hacías sin problema, o roncas con pausas durante el sueño, una valoración temprana cambia el pronóstico.</p>
-          <div class="cta-band__actions">
-            <a class="btn btn--whatsapp btn--lg"
-               href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa.">
+          <div class="cta-aurora__actions">
+            <a class="btn btn--whatsapp btn--lg btn-pro" href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa.">
               Agendar por WhatsApp
             </a>
-            <a class="btn btn--ghost btn--lg" href="mailto:contacto@atmen.mx?subject=Solicitud%20de%20cita">Escribir por correo</a>
+            <a class="btn btn--ghost btn--lg" href="/contacto/">Ver todos los canales</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== CONTACTO FINAL ===== -->
+    <!-- ===== Contacto final ===== -->
     <section class="section" id="contacto" style="background: var(--cloud);">
       <div class="container">
-        <div class="reveal-up" style="text-align: center; max-width: 760px; margin: 0 auto var(--sp-7);">
-          <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Cómo llegar</span>
-          <h2>Consulta privada en Médica Sur</h2>
-          <p class="lead" style="margin: 0 auto;">
-            Médica Sur, Torre 1, Consultorio 612. A 5 minutos del Periférico Sur, con valet parking.
-          </p>
+        <div class="section-head reveal-up">
+          <span class="badge-pill"><span class="pulse" aria-hidden="true"></span>Cómo llegar</span>
+          <h2>Consulta privada en <em>Médica Sur.</em></h2>
+          <p>Médica Sur, Torre 1, Consultorio 612. A 5 minutos del Periférico Sur, con valet parking.</p>
         </div>
 
         <div class="contact-grid">
           <div class="contact-card reveal-up">
-            <h3>
-              <span class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
-              </span>
-              Ubicación
-            </h3>
+            <h3><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg></span> Ubicación</h3>
             <p><strong>Médica Sur, Torre 1</strong><br>Consultorio 612</p>
             <p>Puente de Piedra 150<br>Pueblo Quieto, Tlalpan<br>C.P. 14050, CDMX</p>
             <a href="https://www.google.com/maps/search/?api=1&query=Hospital+M%C3%A9dica+Sur+Puente+de+Piedra+150+Tlalpan" rel="external noopener">Ver en Google Maps</a>
           </div>
-
           <div class="contact-card reveal-up">
-            <h3>
-              <span class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 11h-5v-2h3V6h2z"/></svg>
-              </span>
-              Modalidades
-            </h3>
+            <h3><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 11h-5v-2h3V6h2z"/></svg></span> Modalidades</h3>
             <p><strong>Presencial</strong> en Médica Sur</p>
             <p><strong>Teleconsulta</strong> en español e inglés</p>
             <p class="muted">Aseguradoras: GNP, AXA, MetLife, Bupa, Allianz, Monterrey, Zurich, MAPFRE, Atlas.</p>
           </div>
-
           <div class="contact-card reveal-up">
-            <h3>
-              <span class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg>
-              </span>
-              Acciones
-            </h3>
+            <h3><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg></span> Acciones</h3>
             <a href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa.">WhatsApp · Agendar consulta</a>
             <a href="mailto:contacto@atmen.mx">contacto@atmen.mx</a>
             <a href="tel:+5215614838970">56 1483 8970</a>
           </div>
         </div>
 
-        <div class="map-wrapper reveal-up" style="margin-top: var(--sp-6);">
-          <iframe
-            title="Ubicación del consultorio en Médica Sur"
-            src="https://www.google.com/maps?q=Hospital+M%C3%A9dica+Sur+Puente+de+Piedra+150+Tlalpan+CDMX&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-wrapper reveal-up" style="margin-top: 32px;">
+          <iframe title="Ubicación del consultorio en Médica Sur" src="https://www.google.com/maps?q=Hospital+M%C3%A9dica+Sur+Puente+de+Piedra+150+Tlalpan+CDMX&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -702,7 +616,6 @@
       </aside>
     </div>
 
-    <!-- ===== E-E-A-T byline ===== -->
     <aside class="medical-review-byline" itemprop="reviewedBy" itemscope itemtype="https://schema.org/Physician">
       <div class="avatar-stub" aria-hidden="true">RR</div>
       <div>
@@ -735,17 +648,20 @@
       </p>
       <p class="address">
         <strong>Atmen — Consulta privada</strong> · Médica Sur, Torre 1, Consultorio 612, Puente de Piedra 150, Pueblo Quieto, Tlalpan, C.P. 14050, Ciudad de México, CDMX.
-        Tel. <a href="tel:+5215614838970">56 1483 8970</a> · <a href="mailto:contacto@atmen.mx">contacto@atmen.mx</a> · Para ejercer derechos ARCO escriba a <a href="mailto:privacidad@atmen.mx">privacidad@atmen.mx</a>.
+        Tel. <a href="tel:+5215614838970">56 1483 8970</a> · <a href="mailto:contacto@atmen.mx">contacto@atmen.mx</a> · ARCO: <a href="mailto:privacidad@atmen.mx">privacidad@atmen.mx</a>.
       </p>
       <p class="disclaimer-emergency">
-        Ante urgencias respiratorias llame al <strong>911</strong>. Sitio informativo, no sustituye consulta presencial. Tratamiento de datos personales conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP, reforma 2025); autoridad competente: Secretaría Anticorrupción y Buen Gobierno (SABG).
+        Ante urgencias respiratorias llame al <strong>911</strong>. Sitio informativo, no sustituye consulta presencial. Tratamiento de datos personales conforme a la LFPDPPP (reforma 2025); autoridad competente: Secretaría Anticorrupción y Buen Gobierno (SABG).
       </p>
     </section>
     <p class="footer-meta">
       <span>© 2026 Atmen · Dr. Robinson Robles.</span>
       <span>
         <a href="/aviso-de-privacidad/">Aviso de Privacidad</a> ·
-        <a href="/sobre-el-doctor/">Sobre el doctor</a>
+        <a href="/informacion-regulatoria/">Información regulatoria</a> ·
+        <a href="/sobre-el-doctor/">Sobre el doctor</a> ·
+        <a href="/preguntas-frecuentes/">Preguntas frecuentes</a> ·
+        <a href="/contacto/">Contacto</a>
       </span>
     </p>
   </footer>
