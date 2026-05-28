@@ -1,0 +1,78 @@
+/* =========================================================
+   Atmen — Signature visual elements
+   Aislados para auditoría/iteración. NO contienen layout.
+   ========================================================= */
+
+/* --- 1. Underline cursivo SVG verde leaf bajo <em> en headlines --- */
+.signature-underline em,
+.headline em,
+h1 em.atmen-em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--sea);
+  position: relative;
+  padding: 0 2px;
+}
+.signature-underline em::after,
+.headline em::after,
+h1 em.atmen-em::after {
+  content: "";
+  position: absolute;
+  left: -2px; right: -2px; bottom: -4px;
+  height: 9px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'><path d='M2 6 Q50 1 100 5 T198 5' fill='none' stroke='%2306a77d' stroke-width='2.5' stroke-linecap='round'/></svg>") no-repeat center / 100% 100%;
+}
+
+/* --- 2. Dot pulse del kicker (badge superior del hero) --- */
+.atmen-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ocean);
+}
+.atmen-kicker::before {
+  content: "";
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--leaf);
+  box-shadow: 0 0 0 4px rgba(6, 167, 125, 0.18);
+  animation: atmen-pulse 2.4s ease-in-out infinite;
+}
+@keyframes atmen-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(6,167,125,0.18); }
+  50%      { box-shadow: 0 0 0 8px rgba(6,167,125,0.05); }
+}
+
+/* --- 3. Flow-volume loop SVG (signature del hero) --- */
+.atmen-flow-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400' preserveAspectRatio='none'><g fill='none' stroke='%2306a77d' stroke-width='1' opacity='0.22'><path d='M40 320 Q70 110 160 80 Q230 60 320 95 Q420 130 500 210 Q540 270 480 320 Q400 340 300 330 Q180 320 40 320 Z'/><path d='M60 310 Q90 150 180 120 Q250 105 330 135 Q410 165 480 230 Q510 270 460 310 Q380 325 290 320 Q170 315 60 310'/></g></svg>")
+    no-repeat bottom right / 90% auto;
+}
+
+/* --- 4. Breath pulse (icono ECG sutil) — mantenido del actual --- */
+.atmen-breath {
+  width: 28px; height: 28px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M2 16 L8 16 L11 8 L14 24 L17 12 L20 18 L24 16 L30 16' fill='none' stroke='%2306a77d' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center / contain;
+  opacity: 0.7;
+  animation: atmen-breath 3.5s ease-in-out infinite;
+}
+@keyframes atmen-breath {
+  0%, 100% { transform: scale(1);   opacity: 0.7; }
+  50%      { transform: scale(1.08); opacity: 1;   }
+}
+
+/* --- Reduced motion: detener todas las animaciones signature --- */
+@media (prefers-reduced-motion: reduce) {
+  .atmen-kicker::before,
+  .atmen-breath {
+    animation: none !important;
+  }
+}
