@@ -601,35 +601,28 @@ html { scroll-padding-top: 88px; }
   margin: 0 auto;
 }
 
-/* === CTA aurora premium === */
+/* === CTA aurora premium (refactor: sin conic spin) === */
 .cta-aurora {
+  background: linear-gradient(135deg, var(--ocean), var(--sea) 60%, var(--leaf));
+  color: #fff;
+  padding: 56px 28px;
+  border-radius: 22px;
   position: relative;
   overflow: hidden;
-  isolation: isolate;
-  border-radius: var(--r-2xl);
-  padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 56px);
-  background:
-    radial-gradient(ellipse at 100% 0%, rgba(0,180,216,.55), transparent 55%),
-    radial-gradient(ellipse at 0% 100%, rgba(6,167,125,.45), transparent 55%),
-    linear-gradient(135deg, var(--ocean-deep), var(--ocean) 60%, var(--sea));
-  color: #fff;
   text-align: center;
-  border: 1px solid rgba(255,255,255,.12);
-  box-shadow: 0 30px 80px -30px rgba(2,62,138,.45);
 }
 .cta-aurora::before {
   content: ""; position: absolute; inset: 0;
-  background: conic-gradient(from 0deg at 50% 50%, rgba(0,180,216,.0), rgba(0,180,216,.4), rgba(6,167,125,.3), rgba(0,180,216,.0));
-  filter: blur(60px);
-  opacity: .5;
-  z-index: -1;
-  animation: aurora-spin 22s linear infinite;
+  background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.18), transparent 50%);
+  animation: cta-shimmer 8s ease-in-out infinite;
+  pointer-events: none;
 }
-@keyframes aurora-spin {
-  to { transform: rotate(360deg); }
+@keyframes cta-shimmer {
+  0%, 100% { opacity: 0.6; }
+  50%      { opacity: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .cta-aurora::before { animation: none; }
+  .cta-aurora::before { animation: none; opacity: 0.6; }
 }
 .cta-aurora h2 { color: #fff; max-width: 22ch; margin: 0 auto 12px; font-size: clamp(1.8rem, 2.4vw, 2.6rem); letter-spacing: -.015em; }
 .cta-aurora p  { color: rgba(255,255,255,.9); max-width: 60ch; margin: 0 auto 28px; font-size: 1.05rem; }
@@ -2103,3 +2096,32 @@ html { scroll-padding-top: 88px; }
   .wall__mask::before, .wall__mask::after { display: none; }
   .marquee-row--r2, .marquee-row--r3 { display: flex; }
 }
+
+/* =========================================================
+   FAQ ACCORDION COMPACTO
+   ========================================================= */
+.faq-accordion { padding: 56px 22px; background: var(--cream); }
+.faq-accordion__head { max-width: 720px; margin: 0 auto 22px; }
+.faq-accordion__h {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(26px, 4.5vw, 34px);
+  letter-spacing: -0.025em; margin: 8px 0 0; color: var(--ink);
+}
+.faq-accordion__list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
+.faq-item { background: #fff; border: 1px solid var(--line-soft); border-radius: 12px; overflow: hidden; }
+.faq-item summary {
+  list-style: none; display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; padding: 18px 20px; cursor: pointer; min-height: 56px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-q { font-size: 15.5px; font-weight: 600; color: var(--ink); flex: 1; }
+.faq-chev { color: var(--ocean); font-size: 18px; font-weight: 700; transition: transform .15s; }
+.faq-item[open] .faq-chev { transform: rotate(45deg); }
+.faq-a { padding: 0 20px 20px; font-size: 14.5px; line-height: 1.6; color: #3a4a55; }
+.faq-a p { margin: 0 0 .6em; }
+.faq-a p:last-child { margin-bottom: 0; }
+.faq-accordion__more {
+  display: inline-flex; max-width: 760px; margin: 18px auto 0;
+  color: var(--ocean); font-weight: 600; font-size: 14px; text-decoration: none;
+}
+@media (prefers-reduced-motion: reduce) { .faq-chev { transition: none !important; } }

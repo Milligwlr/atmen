@@ -55,3 +55,13 @@
 
   document.querySelectorAll('[data-switcher]').forEach(init);
 })();
+
+// FAQ single-open
+(function () {
+  const list = document.querySelector('[data-faq]');
+  if (!list) return;
+  const items = Array.from(list.querySelectorAll('.faq-item'));
+  items.forEach((it) => it.addEventListener('toggle', () => {
+    if (it.open) items.forEach((o) => { if (o !== it && o.open) o.open = false; });
+  }));
+})();
