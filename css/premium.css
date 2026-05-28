@@ -1679,7 +1679,7 @@ html { scroll-padding-top: 88px; }
   min-height: 32px;
   display: inline-flex; align-items: center;
 }
-.condition-pills__hot { background: var(--ocean); color: #fff !important; border-color: var(--ocean) !important; }
+.condition-pills li.condition-pills__hot { background: var(--ocean); color: #fff; border-color: var(--ocean); }
 
 /* Desktop: 2-col split */
 @media (min-width: 960px) {
