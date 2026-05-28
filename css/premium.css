@@ -1978,3 +1978,21 @@ html { scroll-padding-top: 88px; }
 @media (prefers-reduced-motion: reduce) {
   .sw-arr, .sw-item summary { transition: none !important; }
 }
+
+/* =========================================================
+   SPLITS 2-UP — secciones en par lateral
+   ========================================================= */
+.splits-2up {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  align-items: stretch;
+}
+.splits-2up > .split-cell {
+  padding: 40px 22px;
+  min-width: 0;
+}
+@media (min-width: 1024px) {
+  .splits-2up { grid-template-columns: 1fr 1fr; }
+  .splits-2up > .split-cell { padding: 64px 36px; }
+}
