@@ -235,75 +235,92 @@
 
   <main id="main">
 
-    <!-- ===== HERO PRO ===== -->
-    <section class="hero-pro">
-      <div class="hero-pro__container">
-        <div class="hero-pro__copy">
-          <span class="badge-pill"><span class="pulse" aria-hidden="true"></span>Neumólogo investigador · INER + Médica Sur</span>
-          <h1 class="headline-pro">Neumología<br>basada en <em>evidencia.</em></h1>
-          <p class="lead-pro">
-            Soy el <strong>Dr. Robinson Robles</strong>. Atiendo asma, EPOC, apnea del sueño, tabaquismo y secuelas respiratorias post-COVID con la misma evidencia que aplico como investigador adscrito a la Clínica de Tabaquismo y EPOC del INER.
-          </p>
+    <!-- ===== HERO SPLIT v3 ===== -->
+    <section class="hero-split" aria-labelledby="hero-title">
+      <div class="hero-split__left">
+        <div class="atmen-flow-bg" aria-hidden="true"></div>
 
-          <div class="stats-row stats-row--4" role="list">
-            <div role="listitem">
-              <span class="stat-pro__num">10<small>+</small></span>
-              <span class="stat-pro__label">Años de experiencia</span>
-            </div>
-            <div role="listitem">
-              <span class="stat-pro__num">131</span>
-              <span class="stat-pro__label">Reseñas verificadas</span>
-            </div>
-            <div role="listitem">
-              <span class="stat-pro__num">h&#8209;7</span>
-              <span class="stat-pro__label">Scholar h-index</span>
-            </div>
-            <div role="listitem">
-              <span class="stat-pro__num">143</span>
-              <span class="stat-pro__label">Citas indexadas</span>
-            </div>
-          </div>
+        <p class="atmen-kicker">Neumólogo Investigador · INER + Médica Sur</p>
 
-          <div class="hero__cta">
-            <a class="btn btn--whatsapp btn--lg btn-pro" href="https://wa.me/5215614838970?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20neumolog%C3%ADa.">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.6 14.3c-.3-.1-1.7-.8-1.9-.9s-.5-.1-.6.1c-.2.3-.7.9-.9 1.1s-.3.2-.6.1c-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.9 2.9 4.6 4.1 2.7 1.1 2.7.7 3.2.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.5 5.9L0 24l6.3-1.7C8 23.4 9.9 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
-              Agendar por WhatsApp
+        <h1 id="hero-title" class="hero-h1 headline">
+          Neumología<br>basada en <em>evidencia.</em>
+        </h1>
+
+        <p class="hero-lede">
+          Soy el <b>Dr. Robinson Robles</b>. Atiendo asma, EPOC, apnea del sueño,
+          tabaquismo y secuelas respiratorias post-COVID con la misma evidencia
+          que aplico como investigador adscrito a la Clínica de Tabaquismo y EPOC
+          del INER.
+        </p>
+
+        <div class="agendar" data-agendar>
+          <button type="button" class="agendar__btn" aria-haspopup="menu" aria-expanded="false" aria-controls="agendar-menu">
+            Agendar cita
+            <span class="agendar__chev" aria-hidden="true">▾</span>
+          </button>
+          <div id="agendar-menu" class="agendar__menu" role="menu" hidden>
+            <p class="agendar__head">Elige cómo prefieres agendar</p>
+            <a class="agendar__item agendar__item--wa" role="menuitem" href="https://wa.me/525500000000?text=Hola%20doctor%2C%20quisiera%20agendar%20una%20cita">
+              <span class="agendar__ic" aria-hidden="true">✓</span>
+              <span class="agendar__lbl"><b>WhatsApp</b><span>Respuesta en minutos · horario hábil</span></span>
+              <span class="agendar__arr" aria-hidden="true">→</span>
             </a>
-            <a class="btn btn--ghost btn--lg" href="contacto/index.html">Otros canales</a>
-          </div>
-
-          <div class="tag-pills" aria-label="Padecimientos que atiende">
-            <a class="tag-pill" href="#areas">Asma</a>
-            <a class="tag-pill" href="#areas">EPOC</a>
-            <a class="tag-pill" href="#areas">Tos crónica</a>
-            <a class="tag-pill" href="#areas">Disnea</a>
-            <a class="tag-pill" href="#areas">Apnea del sueño</a>
-            <a class="tag-pill" href="#areas">Derrame pleural</a>
-            <a class="tag-pill" href="#areas">Cáncer de pulmón</a>
-            <a class="tag-pill" href="#areas">Broncoscopia</a>
-          </div>
-        </div>
-
-        <div class="hero-pro__visual">
-          <div class="portrait-pro">
-            <div class="portrait-pro__halo" aria-hidden="true"></div>
-            <div class="portrait-pro__ring">
-              <div class="portrait-pro__inner">
-                <img src="images/doctor-portrait.svg"
-                     alt="Dr. Robinson Robles, neumólogo en Ciudad de México, retrato profesional placeholder"
-                     width="400" height="500"
-                     fetchpriority="high"
-                     decoding="async">
-                <div class="portrait-pro__creds" aria-hidden="true">
-                  <span class="cred-glass">CP 10431658</span>
-                  <span class="cred-glass">CNN 1509</span>
-                </div>
-                <p class="portrait-pro__chip">Adscrito a la Clínica de Tabaquismo y EPOC, INER · Consulta privada en Médica Sur.</p>
-              </div>
-            </div>
+            <a class="agendar__item" role="menuitem" href="tel:+525554242400">
+              <span class="agendar__ic" aria-hidden="true">☏</span>
+              <span class="agendar__lbl"><b>Llamada directa</b><span>Médica Sur · línea consultorio</span></span>
+              <span class="agendar__arr" aria-hidden="true">→</span>
+            </a>
+            <a class="agendar__item" role="menuitem" href="mailto:contacto@atmen.mx?subject=Solicitud%20de%20cita">
+              <span class="agendar__ic" aria-hidden="true">✉</span>
+              <span class="agendar__lbl"><b>Correo electrónico</b><span>Para casos no urgentes</span></span>
+              <span class="agendar__arr" aria-hidden="true">→</span>
+            </a>
+            <a class="agendar__item" role="menuitem" href="https://www.doctoralia.com.mx/" target="_blank" rel="noopener">
+              <span class="agendar__ic" aria-hidden="true">▦</span>
+              <span class="agendar__lbl"><b>Agendar online</b><span>Doctoralia · disponible 24/7</span></span>
+              <span class="agendar__arr" aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
+
+        <dl class="hero-stats">
+          <div class="hero-stats__cell"><dt>Años de experiencia</dt><dd><b>10<small>+</small></b></dd></div>
+          <div class="hero-stats__cell"><dt>Reseñas verificadas</dt><dd><b>131</b></dd></div>
+          <div class="hero-stats__cell"><dt>Scholar h-index</dt><dd><b>h-7</b></dd></div>
+          <div class="hero-stats__cell"><dt>Citas indexadas</dt><dd><b>143</b></dd></div>
+        </dl>
       </div>
+
+      <aside class="hero-split__right" aria-label="Credenciales y padecimientos">
+        <figure class="portrait-editorial">
+          <span class="portrait-editorial__fig">FIG. 01</span>
+          <div class="portrait-editorial__img">
+            <img src="images/doctor-portrait.svg"
+                 alt="Dr. Robinson Robles, neumólogo en Ciudad de México, retrato profesional placeholder"
+                 width="400" height="500"
+                 fetchpriority="high"
+                 decoding="async">
+          </div>
+          <figcaption><b>Dr. Robinson Robles</b> · Neumólogo · INER + Médica Sur</figcaption>
+        </figure>
+
+        <dl class="credentials">
+          <div><dt>Cédula Profesional</dt><dd>10431658</dd></div>
+          <div><dt>Cédula Especialidad</dt><dd>12440475</dd></div>
+          <div><dt>CNN Vigente</dt><dd>1509 / 2031</dd></div>
+          <div><dt>Scholar h-index</dt><dd>h-7 · 143 citas</dd></div>
+        </dl>
+
+        <ul class="condition-pills" aria-label="Padecimientos que trato">
+          <li class="condition-pills__hot">Asma</li>
+          <li class="condition-pills__hot">EPOC</li>
+          <li>Apnea</li>
+          <li>Tabaquismo</li>
+          <li>Post-COVID</li>
+          <li>Disnea</li>
+          <li>Tos crónica</li>
+        </ul>
+      </aside>
     </section>
 
     <!-- ===== Marquee instituciones ===== -->
