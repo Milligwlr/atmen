@@ -372,42 +372,6 @@ html { scroll-padding-top: 88px; }
 .tag-pill:hover { transform: translateY(-1px); color: var(--ocean-deep); }
 .tag-pill:hover::before { opacity: 1; }
 
-/* === Marquee de instituciones === */
-/* DEPRECATED Task 17 — reemplazado por .institutions-ribbon (Task 6). No eliminar todavia. */
-.marquee {
-  position: relative;
-  overflow: hidden;
-  padding: 28px 0;
-  border-block: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--paper), var(--cloud));
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-}
-.marquee__track {
-  display: flex; gap: clamp(40px, 6vw, 96px);
-  width: max-content;
-  animation: marquee-scroll 28s linear infinite;
-}
-.marquee:hover .marquee__track { animation-play-state: paused; }
-.marquee__item {
-  flex: 0 0 auto;
-  display: inline-flex; align-items: center; gap: 12px;
-  font-weight: 700; color: var(--ink-muted);
-  letter-spacing: -.005em;
-  font-size: 1.05rem;
-}
-.marquee__item .dot {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: var(--sky);
-  box-shadow: 0 0 0 4px rgba(0,180,216,.18);
-}
-@keyframes marquee-scroll {
-  to { transform: translateX(-50%); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .marquee__track { animation: none; }
-}
-
 /* === Bento grid asimétrico === */
 .bento {
   display: grid; gap: 18px;
