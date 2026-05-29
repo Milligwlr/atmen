@@ -1,0 +1,477 @@
+{
+  "topics": [
+    {
+      "slug": "asma",
+      "name": "Asma",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Qué es el asma?",
+          "a": "El asma es una enfermedad crónica de las vías respiratorias en la que los bronquios se inflaman y se estrechan, lo que dificulta el paso del aire. Suele cursar con episodios variables de obstrucción que pueden mejorar de forma espontánea o con tratamiento. Es una de las enfermedades respiratorias más frecuentes y, bien controlada, permite hacer una vida normal.",
+          "refs": [1]
+        },
+        {
+          "q": "¿Qué síntomas tiene el asma y cuándo debo consultar?",
+          "a": "Los síntomas típicos son tos, silbidos en el pecho, opresión torácica y falta de aire, que suelen variar a lo largo del día y empeorar de noche, con el ejercicio o ante alérgenos. Conviene consultar si estos síntomas se repiten, le despiertan por la noche o limitan su actividad. Si presenta dificultad respiratoria intensa que no cede con su inhalador de rescate, busque atención de urgencia.",
+          "refs": [1]
+        },
+        {
+          "q": "¿Cómo se diagnostica el asma?",
+          "a": "El diagnóstico se basa en la historia de síntomas respiratorios variables y en pruebas de función pulmonar, principalmente la espirometría, que puede mostrar obstrucción que mejora tras un broncodilatador. En algunos casos se complementa con flujometría u otras pruebas. Un diagnóstico correcto evita tanto tratar de más como dejar el asma sin control.",
+          "refs": [1, 2]
+        },
+        {
+          "q": "¿Cómo se trata el asma?",
+          "a": "Según la estrategia GINA 2024, todos los adolescentes y adultos con asma deben recibir un tratamiento que contenga corticoide inhalado y no usar solo un broncodilatador de acción corta como único alivio. El tratamiento se ajusta por pasos a cada persona y se acompaña de un plan de acción escrito; en el asma grave existen terapias biológicas. El objetivo es controlar los síntomas y reducir el riesgo de crisis.",
+          "refs": [1, 2]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles con el asma?",
+          "a": "Como neumólogo con experiencia en el INER y Médica Sur, el Dr. Robles realiza la evaluación clínica, la espirometría y un plan de manejo individualizado conforme a las guías vigentes, incluyendo la técnica de inhalación y un plan de acción por escrito. También valora casos de difícil control para considerar estudios o terapias adicionales. Esta información es educativa y no sustituye la consulta médica.",
+          "refs": [1]
+        }
+      ]
+    },
+    {
+      "slug": "epoc",
+      "name": "EPOC (enfermedad pulmonar obstructiva crónica)",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Qué es la EPOC?",
+          "a": "La EPOC es una enfermedad pulmonar crónica caracterizada por una limitación persistente al flujo de aire, habitualmente causada por la exposición prolongada a humo de tabaco u otras partículas nocivas. Es prevenible y tratable, y figura entre las principales causas de muerte en el mundo. Con un manejo adecuado se pueden reducir los síntomas y las complicaciones.",
+          "refs": [3, 4]
+        },
+        {
+          "q": "¿Qué síntomas produce la EPOC y cuándo debo consultar?",
+          "a": "Los síntomas más comunes son falta de aire que progresa con el tiempo, tos crónica y expectoración, sobre todo en personas con antecedente de tabaquismo. Conviene consultar si tiene tos o flemas frecuentes, 'infecciones de pecho' repetidas o se cansa al hacer esfuerzos que antes toleraba. Un aumento brusco de la dificultad respiratoria o de las flemas puede indicar una exacerbación y requiere valoración.",
+          "refs": [3, 4]
+        },
+        {
+          "q": "¿Cómo se diagnostica la EPOC?",
+          "a": "El diagnóstico se confirma con una espirometría que demuestra obstrucción al flujo de aire que no se normaliza por completo tras un broncodilatador. La evaluación también considera los síntomas y el riesgo de exacerbaciones para clasificar la gravedad y orientar el tratamiento. La espirometría es clave porque la EPOC suele estar subdiagnosticada.",
+          "refs": [3, 4]
+        },
+        {
+          "q": "¿Cómo se trata la EPOC?",
+          "a": "El tratamiento combina dejar de fumar, broncodilatadores inhalados y, en casos seleccionados, corticoides inhalados, junto con vacunación, rehabilitación pulmonar y actividad física. En algunos pacientes los mucolíticos pueden reducir levemente las exacerbaciones, aunque su beneficio es modesto. El plan se individualiza para aliviar los síntomas y prevenir las crisis.",
+          "refs": [3, 4, 5]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles con la EPOC?",
+          "a": "El Dr. Robles, neumólogo con formación en el INER y Médica Sur, confirma el diagnóstico mediante espirometría, evalúa la gravedad y diseña un plan de tratamiento conforme a las guías GOLD, incluyendo apoyo para dejar de fumar y rehabilitación. También vigila las comorbilidades y las exacerbaciones. La información aquí presentada es educativa y no reemplaza la consulta.",
+          "refs": [4]
+        }
+      ]
+    },
+    {
+      "slug": "tos-cronica",
+      "name": "Tos crónica",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Qué se considera tos crónica?",
+          "a": "Se habla de tos crónica cuando la tos dura más de ocho semanas en adultos. Es un motivo de consulta muy frecuente y, aunque suele tener causas tratables, conviene estudiarla para identificar el origen. No siempre indica algo grave, pero merece una evaluación ordenada.",
+          "refs": [6]
+        },
+        {
+          "q": "¿Cuáles son las causas más frecuentes de la tos crónica?",
+          "a": "En adultos no fumadores, las causas más comunes son el síndrome de tos de vías respiratorias altas (goteo posnasal por afecciones de nariz y senos), el asma, el reflujo gastroesofágico y la bronquitis eosinofílica no asmática, a veces combinadas. El tabaquismo y algunos medicamentos también pueden provocar tos. Identificar la causa permite un tratamiento dirigido.",
+          "refs": [6, 7]
+        },
+        {
+          "q": "¿Cómo se estudia la tos crónica?",
+          "a": "La evaluación parte de la historia clínica y la exploración, y se apoya en algoritmos por pasos según la duración de la tos y los datos que orienten a una causa. Pueden solicitarse radiografía de tórax, espirometría, valoración de reflujo o de vías altas, y suspender fármacos que la provoquen. El abordaje suele ser escalonado y, en ocasiones, multidisciplinario.",
+          "refs": [6, 7]
+        },
+        {
+          "q": "¿Cómo se trata la tos crónica?",
+          "a": "El tratamiento se dirige a la causa identificada: por ejemplo, manejo del goteo posnasal, control del asma o medidas y tratamiento para el reflujo. La mejoría de los síntomas con una prueba terapéutica ayuda a confirmar el origen. Por ello no existe un único tratamiento universal, sino uno adaptado a cada paciente.",
+          "refs": [6, 7]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles si tengo tos crónica?",
+          "a": "El Dr. Robles, neumólogo del INER y Médica Sur, aplica un abordaje sistemático para buscar la causa de la tos, solicita los estudios pertinentes y coordina el manejo con otras especialidades cuando es necesario. Su objetivo es identificar y tratar el origen para que la tos mejore. Esta información es educativa y no sustituye la valoración médica.",
+          "refs": [6]
+        }
+      ]
+    },
+    {
+      "slug": "disnea",
+      "name": "Disnea (falta de aire)",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Qué es la disnea?",
+          "a": "La disnea es la sensación subjetiva de dificultad para respirar o de falta de aire, un síntoma frecuente y angustiante en enfermedades del corazón, del pulmón y neuromusculares. Puede describirse de distintas formas, como ahogo, opresión o esfuerzo al respirar. Es un motivo de consulta importante porque puede reflejar problemas tratables.",
+          "refs": [8]
+        },
+        {
+          "q": "¿Cuándo debo preocuparme por la falta de aire?",
+          "a": "Conviene consultar si la falta de aire aparece con esfuerzos cada vez menores, le despierta por la noche o se acompaña de dolor de pecho, hinchazón de piernas, tos persistente o silbidos. La disnea de inicio súbito o intensa debe valorarse de urgencia. Identificar la causa a tiempo mejora el pronóstico.",
+          "refs": [8]
+        },
+        {
+          "q": "¿Qué puede causar la disnea y cómo se estudia?",
+          "a": "Entre las causas frecuentes están el asma, la EPOC, las enfermedades cardíacas, la anemia y el desacondicionamiento físico, entre otras. La evaluación combina la historia clínica con pruebas como espirometría, radiografía de tórax, electrocardiograma o análisis, según la sospecha. Medir la intensidad de la disnea ayuda a seguir su evolución.",
+          "refs": [8]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles con la disnea?",
+          "a": "Como neumólogo formado en el INER y Médica Sur, el Dr. Robles evalúa la falta de aire de forma integral para distinguir las causas respiratorias de otras, solicita los estudios necesarios y orienta el tratamiento o la derivación oportuna. El abordaje busca aliviar el síntoma y tratar su causa. La información es educativa y no reemplaza la consulta médica.",
+          "refs": [8]
+        }
+      ]
+    },
+    {
+      "slug": "apnea-del-sueno",
+      "name": "Apnea del sueño",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Qué es la apnea obstructiva del sueño?",
+          "a": "La apnea obstructiva del sueño es un trastorno en el que la vía respiratoria superior se colapsa de forma repetida durante el sueño, provocando pausas o reducciones de la respiración. Esto fragmenta el descanso y disminuye la oxigenación nocturna. Es un trastorno frecuente que puede afectar la salud cardiovascular y la calidad de vida.",
+          "refs": [9]
+        },
+        {
+          "q": "¿Qué síntomas hacen sospechar apnea del sueño?",
+          "a": "Los datos más sugerentes son ronquido intenso, pausas respiratorias observadas por la pareja, despertares con sensación de ahogo, sueño no reparador y somnolencia diurna excesiva. También puede asociarse con hipertensión arterial. Si presenta estos síntomas, conviene una valoración del sueño.",
+          "refs": [9, 10]
+        },
+        {
+          "q": "¿Cómo se diagnostica la apnea del sueño?",
+          "a": "El diagnóstico requiere una valoración clínica completa y un estudio objetivo del sueño: la polisomnografía es la prueba estándar, y en pacientes adecuados puede usarse una prueba de sueño en casa con un dispositivo técnicamente apropiado. Los cuestionarios por sí solos no bastan para diagnosticarla. Si una prueba domiciliaria resulta negativa o no concluyente y persiste la sospecha, se realiza polisomnografía.",
+          "refs": [9]
+        },
+        {
+          "q": "¿Cómo se trata la apnea del sueño?",
+          "a": "El tratamiento de referencia para la apnea con somnolencia es la presión positiva en la vía aérea (CPAP), que se acompaña de educación, seguimiento y medidas como control de peso e higiene del sueño. La adherencia y el ajuste adecuado del equipo son clave para que funcione. El plan se individualiza según la gravedad y las preferencias del paciente.",
+          "refs": [10]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles con la apnea del sueño?",
+          "a": "El Dr. Robles, neumólogo con experiencia en el INER y Médica Sur, evalúa los síntomas, indica el estudio de sueño apropiado y, de confirmarse el diagnóstico, orienta el tratamiento con CPAP y el seguimiento para asegurar su eficacia. También considera medidas complementarias según cada caso. Esta información es educativa y no sustituye la consulta médica.",
+          "refs": [9, 10]
+        }
+      ]
+    },
+    {
+      "slug": "tabaquismo",
+      "name": "Tabaquismo",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Por qué es importante dejar de fumar?",
+          "a": "El tabaquismo es la principal causa prevenible de enfermedad y muerte en el mundo, y se asocia con EPOC, cáncer de pulmón y enfermedades cardiovasculares, entre otras. Dejar de fumar reduce ese daño a cualquier edad. Muchas personas desean dejarlo y existen tratamientos que ayudan a lograrlo.",
+          "refs": [11]
+        },
+        {
+          "q": "¿Qué tratamientos ayudan a dejar de fumar?",
+          "a": "Existen medicamentos con eficacia demostrada, como la terapia de reemplazo de nicotina (parche más una forma de acción rápida), la vareniclina, la citisina y el bupropión, idealmente acompañados de apoyo conductual. Según revisiones Cochrane, la vareniclina y la citisina se asocian con mayores tasas de abandono que el placebo. El tratamiento se elige de forma individualizada con su médico.",
+          "refs": [11, 12]
+        },
+        {
+          "q": "¿Los medicamentos para dejar de fumar son seguros?",
+          "a": "En general, los eventos adversos graves con estos tratamientos son poco frecuentes. La vareniclina es eficaz, aunque puede asociarse con más efectos secundarios que no usarla, por lo que se valora el balance de beneficios y riesgos en cada persona. Su médico revisará sus antecedentes para elegir la mejor opción.",
+          "refs": [11, 12]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles a dejar de fumar?",
+          "a": "El Dr. Robles, neumólogo del INER y Médica Sur, ofrece orientación para dejar de fumar combinando consejo, apoyo conductual y, cuando está indicado, tratamiento farmacológico conforme a la evidencia. También evalúa el impacto del tabaco en sus pulmones. La información aquí presentada es educativa y no sustituye la consulta médica.",
+          "refs": [11]
+        }
+      ]
+    },
+    {
+      "slug": "post-covid",
+      "name": "Síndrome post-COVID",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Qué es el síndrome post-COVID o COVID prolongado?",
+          "a": "Según la definición de consenso de la Organización Mundial de la Salud, la condición post-COVID-19 ocurre en personas con antecedente de infección por SARS-CoV-2, habitualmente unos tres meses después del inicio, con síntomas que duran al menos dos meses y que no se explican por otro diagnóstico. Es variable en su forma e impacto. Puede afectar la vida cotidiana.",
+          "refs": [13]
+        },
+        {
+          "q": "¿Qué síntomas puede causar y cuándo consultar?",
+          "a": "Se han descrito más de 200 síntomas en distintos órganos; entre los más frecuentes están la fatiga, la falta de aire y la dificultad de concentración, que pueden fluctuar o reaparecer con el tiempo. Conviene consultar si los síntomas persisten más allá de la recuperación inicial y limitan su funcionamiento diario. Una valoración ayuda a descartar otras causas.",
+          "refs": [13, 14]
+        },
+        {
+          "q": "¿Cómo se diagnostica y maneja el post-COVID?",
+          "a": "Hasta ahora no existe una prueba única que confirme el post-COVID, por lo que el diagnóstico es clínico y requiere descartar otras causas de los síntomas. El manejo es individualizado y multidisciplinario, orientado a aliviar los síntomas y apoyar la recuperación funcional. La investigación sigue avanzando para definir mejores estrategias.",
+          "refs": [13, 14]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles si tengo síntomas post-COVID?",
+          "a": "El Dr. Robles, neumólogo con formación en el INER y Médica Sur, evalúa los síntomas respiratorios persistentes tras la COVID-19, realiza los estudios pertinentes para descartar otras causas y coordina un plan de seguimiento y rehabilitación según cada caso. El enfoque busca apoyar su recuperación. Esta información es educativa y no reemplaza la consulta médica.",
+          "refs": [13]
+        }
+      ]
+    },
+    {
+      "slug": "cancer-pulmon",
+      "name": "Cáncer de pulmón",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Qué es el cáncer de pulmón?",
+          "a": "El cáncer de pulmón es uno de los tipos de cáncer más frecuentes y la principal causa de muerte por cáncer en el mundo. El tipo más común es el cáncer de pulmón de células no pequeñas. Su pronóstico ha mejorado en la última década gracias a la detección temprana y a nuevos tratamientos.",
+          "refs": [15, 16]
+        },
+        {
+          "q": "¿Cuáles son los factores de riesgo del cáncer de pulmón?",
+          "a": "El tabaquismo es el principal factor de riesgo, y las tasas de cáncer de pulmón siguen de cerca los patrones de consumo de tabaco. También contribuyen exposiciones ambientales y ocupacionales como el radón, el asbesto, el arsénico y los combustibles de biomasa. Por ello, dejar de fumar es una medida central de prevención.",
+          "refs": [16]
+        },
+        {
+          "q": "¿Cómo se detecta y diagnostica el cáncer de pulmón?",
+          "a": "En personas con alto riesgo, grandes estudios han mostrado que la tamización con tomografía de tórax de baja dosis reduce la mortalidad, al permitir diagnósticos en etapas más tempranas. Ante síntomas o hallazgos sospechosos, el diagnóstico requiere estudios de imagen y la obtención de tejido para confirmarlo. La evaluación define el tipo y la extensión de la enfermedad.",
+          "refs": [15, 16]
+        },
+        {
+          "q": "¿Cómo se trata el cáncer de pulmón?",
+          "a": "El tratamiento depende del tipo y la etapa, y puede incluir cirugía, radioterapia y tratamientos sistémicos como quimioterapia, inmunoterapia o terapias dirigidas según las características del tumor. El manejo es individualizado y suele requerir un equipo multidisciplinario. Los marcadores clínicos y genéticos ayudan a personalizar las decisiones.",
+          "refs": [15]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles ante una sospecha de cáncer de pulmón?",
+          "a": "El Dr. Robles, neumólogo del INER y Médica Sur, evalúa los síntomas y hallazgos pulmonares, orienta los estudios de imagen y los procedimientos para obtener un diagnóstico, y coordina la atención con el equipo de oncología. Su papel incluye acompañar al paciente en el proceso diagnóstico. La información aquí es educativa y no sustituye la valoración médica.",
+          "refs": [15]
+        }
+      ]
+    },
+    {
+      "slug": "derrame-pleural",
+      "name": "Derrame pleural",
+      "kind": "enfermedad",
+      "faqs": [
+        {
+          "q": "¿Qué es un derrame pleural?",
+          "a": "Un derrame pleural es la acumulación anormal de líquido en el espacio pleural, entre el pulmón y la pared del tórax. Es un problema frecuente que puede deberse a múltiples causas y requiere un manejo especializado. Identificar el origen es clave para tratarlo adecuadamente.",
+          "refs": [17]
+        },
+        {
+          "q": "¿Qué síntomas produce y cuándo consultar?",
+          "a": "Puede causar falta de aire, dolor torácico y tos, aunque a veces se detecta en una radiografía solicitada por otro motivo. Conviene consultar si presenta dificultad para respirar o dolor de pecho que no mejora. La cantidad de líquido y la causa determinan la gravedad.",
+          "refs": [17]
+        },
+        {
+          "q": "¿Cómo se diagnostica la causa de un derrame pleural?",
+          "a": "El estudio combina imágenes del tórax con el análisis del líquido obtenido mediante toracocentesis, lo que ayuda a distinguir entre trasudados y exudados y a orientar el diagnóstico. En contextos específicos, como la sospecha de derrame por tuberculosis, el análisis del líquido con marcadores como la adenosina desaminasa tiene alta utilidad, y a veces se requiere biopsia pleural. El abordaje suele ser por pasos.",
+          "refs": [17, 18]
+        },
+        {
+          "q": "¿Cómo se trata el derrame pleural?",
+          "a": "El tratamiento depende de la causa: por ejemplo, manejo de la enfermedad de base, drenaje del líquido cuando produce síntomas o tratamiento dirigido en casos como la tuberculosis pleural. Las decisiones se individualizan según el tipo de derrame y la situación del paciente. Por ello es importante confirmar el origen.",
+          "refs": [17, 18]
+        },
+        {
+          "q": "¿Cómo puede ayudarme el Dr. Robinson Robles con un derrame pleural?",
+          "a": "El Dr. Robles, neumólogo con experiencia en el INER y Médica Sur, evalúa el derrame, realiza o coordina la toracocentesis y el análisis del líquido, y orienta el manejo según la causa identificada. También valora si se requieren procedimientos adicionales. Esta información es educativa y no reemplaza la consulta médica.",
+          "refs": [17]
+        }
+      ]
+    },
+    {
+      "slug": "broncoscopia",
+      "name": "Broncoscopia",
+      "kind": "servicio",
+      "faqs": [
+        {
+          "q": "¿Qué es una broncoscopia?",
+          "a": "La broncoscopia flexible es un procedimiento que permite examinar el interior de la tráquea y los bronquios mediante un tubo delgado y flexible con cámara. Es una herramienta fundamental de la neumología, tanto para diagnóstico como para tratamiento. Su utilidad ha crecido conforme avanza la tecnología.",
+          "refs": [19]
+        },
+        {
+          "q": "¿Para qué sirve la broncoscopia?",
+          "a": "Sirve para inspeccionar las vías respiratorias y obtener muestras de tejido o secreciones, mediante técnicas como el lavado broncoalveolar, el cepillado bronquial o la biopsia y la punción transbronquial. También tiene aplicaciones terapéuticas. Se indica para estudiar lesiones, sangrados, infecciones o tos persistente, entre otras situaciones.",
+          "refs": [19]
+        },
+        {
+          "q": "¿Es riesgosa la broncoscopia?",
+          "a": "La broncoscopia flexible se considera un procedimiento seguro en general, aunque, como toda intervención, tiene posibles complicaciones y contraindicaciones que el médico valora antes de realizarla. El equipo evalúa cada caso individualmente para minimizar los riesgos. Su médico le explicará el procedimiento y los cuidados.",
+          "refs": [19]
+        },
+        {
+          "q": "¿Cómo realiza el Dr. Robinson Robles la broncoscopia?",
+          "a": "El Dr. Robles, neumólogo con formación en el INER y Médica Sur, valora la indicación de la broncoscopia, explica el procedimiento al paciente y lo lleva a cabo con las medidas de seguridad apropiadas, integrando los resultados en el plan de manejo. El objetivo es obtener información diagnóstica útil de forma segura. Esta información es educativa y no sustituye la consulta médica.",
+          "refs": [19]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "authors": "Dubin S, Patak P, Jung D.",
+      "title": "Update on Asthma Management Guidelines.",
+      "source": "Mo Med. 2024;121(5):364-367.",
+      "pmid": "39421468",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39421468/"
+    },
+    {
+      "id": 2,
+      "authors": "Matera MG, Rinaldi B, Annibale R, De Novellis V, Cazzola M.",
+      "title": "The pharmacological management of asthma in adults: 2023 update.",
+      "source": "Expert Opin Pharmacother. 2024;25(4):383-393.",
+      "pmid": "38497368",
+      "doi": "10.1080/14656566.2024.2332627",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38497368/"
+    },
+    {
+      "id": 3,
+      "authors": "Agustí A, Celli BR, Criner GJ, et al.",
+      "title": "Global Initiative for Chronic Obstructive Lung Disease 2023 Report: GOLD Executive Summary.",
+      "source": "Eur Respir J. 2023;61(4):2300239.",
+      "pmid": "36858443",
+      "doi": "10.1183/13993003.00239-2023",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36858443/"
+    },
+    {
+      "id": 4,
+      "authors": "Patel N.",
+      "title": "An update on COPD prevention, diagnosis, and management: The 2024 GOLD Report.",
+      "source": "Nurse Pract. 2024;49(6):29-36.",
+      "pmid": "38941078",
+      "doi": "10.1097/01.NPR.0000000000000180",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38941078/"
+    },
+    {
+      "id": 5,
+      "authors": "Poole P, Sathananthan K, Fortescue R.",
+      "title": "Mucolytic agents versus placebo for chronic bronchitis or chronic obstructive pulmonary disease.",
+      "source": "Cochrane Database Syst Rev. 2019;5(5):CD001287.",
+      "pmid": "31107966",
+      "doi": "10.1002/14651858.CD001287.pub6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31107966/"
+    },
+    {
+      "id": 6,
+      "authors": "Irwin RS, French CL, Chang AB, Altman KW; CHEST Expert Cough Panel.",
+      "title": "Classification of Cough as a Symptom in Adults and Management Algorithms: CHEST Guideline and Expert Panel Report.",
+      "source": "Chest. 2018;153(1):196-209.",
+      "pmid": "29080708",
+      "doi": "10.1016/j.chest.2017.10.016",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29080708/"
+    },
+    {
+      "id": 7,
+      "authors": "Chen JW, Vela MF, Peterson KA, Carlson DA.",
+      "title": "AGA Clinical Practice Update on the Diagnosis and Management of Extraesophageal Gastroesophageal Reflux Disease: Expert Review.",
+      "source": "Clin Gastroenterol Hepatol. 2023;21(6):1414-1421.e3.",
+      "pmid": "37061897",
+      "doi": "10.1016/j.cgh.2023.01.040",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37061897/"
+    },
+    {
+      "id": 8,
+      "authors": "Parshall MB, Schwartzstein RM, Adams L, et al.",
+      "title": "An official American Thoracic Society statement: update on the mechanisms, assessment, and management of dyspnea.",
+      "source": "Am J Respir Crit Care Med. 2012;185(4):435-452.",
+      "pmid": "22336677",
+      "doi": "10.1164/rccm.201111-2042ST",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22336677/"
+    },
+    {
+      "id": 9,
+      "authors": "Kapur VK, Auckley DH, Chowdhuri S, et al.",
+      "title": "Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of Sleep Medicine Clinical Practice Guideline.",
+      "source": "J Clin Sleep Med. 2017;13(3):479-504.",
+      "pmid": "28162150",
+      "doi": "10.5664/jcsm.6506",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28162150/"
+    },
+    {
+      "id": 10,
+      "authors": "Patil SP, Ayappa IA, Caples SM, Kimoff RJ, Patel SR, Harrod CG.",
+      "title": "Treatment of Adult Obstructive Sleep Apnea with Positive Airway Pressure: An American Academy of Sleep Medicine Clinical Practice Guideline.",
+      "source": "J Clin Sleep Med. 2019;15(2):335-343.",
+      "pmid": "30736887",
+      "doi": "10.5664/jcsm.7640",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30736887/"
+    },
+    {
+      "id": 11,
+      "authors": "Lindson N, Theodoulou A, Ordóñez-Mena JM, et al.",
+      "title": "Pharmacological and electronic cigarette interventions for smoking cessation in adults: component network meta-analyses.",
+      "source": "Cochrane Database Syst Rev. 2023;9(9):CD015226.",
+      "pmid": "37696529",
+      "doi": "10.1002/14651858.CD015226.pub2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37696529/"
+    },
+    {
+      "id": 12,
+      "authors": "Livingstone-Banks J, Fanshawe TR, Thomas KH, et al.",
+      "title": "Nicotine receptor partial agonists for smoking cessation.",
+      "source": "Cochrane Database Syst Rev. 2023;5(5):CD006103.",
+      "pmid": "37142273",
+      "doi": "10.1002/14651858.CD006103.pub8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37142273/"
+    },
+    {
+      "id": 13,
+      "authors": "Soriano JB, Murthy S, Marshall JC, Relan P, Diaz JV; WHO Clinical Case Definition Working Group on Post-COVID-19 Condition.",
+      "title": "A clinical case definition of post-COVID-19 condition by a Delphi consensus.",
+      "source": "Lancet Infect Dis. 2022;22(4):e102-e107.",
+      "pmid": "34951953",
+      "doi": "10.1016/S1473-3099(21)00703-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34951953/"
+    },
+    {
+      "id": 14,
+      "authors": "Davis HE, McCorkell L, Vogel JM, Topol EJ.",
+      "title": "Long COVID: major findings, mechanisms and recommendations.",
+      "source": "Nat Rev Microbiol. 2023;21(3):133-146.",
+      "pmid": "36639608",
+      "doi": "10.1038/s41579-022-00846-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36639608/"
+    },
+    {
+      "id": 15,
+      "authors": "Hendriks LEL, Remon J, Faivre-Finn C, et al.",
+      "title": "Non-small-cell lung cancer.",
+      "source": "Nat Rev Dis Primers. 2024;10(1):71.",
+      "pmid": "39327441",
+      "doi": "10.1038/s41572-024-00551-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39327441/"
+    },
+    {
+      "id": 16,
+      "authors": "Leiter A, Veluswamy RR, Wisnivesky JP.",
+      "title": "The global burden of lung cancer: current status and future trends.",
+      "source": "Nat Rev Clin Oncol. 2023;20(9):624-639.",
+      "pmid": "37479810",
+      "doi": "10.1038/s41571-023-00798-3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37479810/"
+    },
+    {
+      "id": 17,
+      "authors": "Botana Rial M, Pérez Pallarés J, Cases Viedma E, et al.",
+      "title": "Diagnosis and Treatment of Pleural Effusion. Recommendations of the Spanish Society of Pulmonology and Thoracic Surgery. Update 2022.",
+      "source": "Arch Bronconeumol. 2023;59(1):27-35.",
+      "pmid": "36273933",
+      "doi": "10.1016/j.arbres.2022.09.017",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36273933/"
+    },
+    {
+      "id": 18,
+      "authors": "Shaw JA, Diacon AH, Koegelenberg CFN.",
+      "title": "Tuberculous pleural effusion.",
+      "source": "Respirology. 2019;24(10):962-971.",
+      "pmid": "31418985",
+      "doi": "10.1111/resp.13673",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31418985/"
+    },
+    {
+      "id": 19,
+      "authors": "Miller RJ, Casal RF, Lazarus DR, Ost DE, Eapen GA.",
+      "title": "Flexible Bronchoscopy.",
+      "source": "Clin Chest Med. 2018;39(1):1-16.",
+      "pmid": "29433707",
+      "doi": "10.1016/j.ccm.2017.09.002",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29433707/"
+    }
+  ]
+}

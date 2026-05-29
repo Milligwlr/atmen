@@ -147,6 +147,7 @@ p, li { font-size: var(--fs-base); line-height: 1.7; }
 .navbar__menu .navbar__cta { padding: 10px 20px; }
 .navbar__toggler {
   display: none;
+  flex-direction: column;
   background: transparent; border: 1px solid var(--border-strong);
   border-radius: var(--r-md);
   padding: 8px 10px;
@@ -156,9 +157,13 @@ p, li { font-size: var(--fs-base); line-height: 1.7; }
 .navbar__toggler .bar {
   display: block; width: 22px; height: 2px;
   background: var(--ink); border-radius: 2px;
-  transition: transform .25s var(--ease), opacity .25s var(--ease);
+  transition: transform .25s var(--ease), opacity .2s var(--ease);
 }
 .navbar__toggler .bar + .bar { margin-top: 5px; }
+/* Animación a "X" al abrir */
+.navbar__toggler[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.navbar__toggler[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
+.navbar__toggler[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 @media (max-width: 899px) {
   .navbar__brand-suffix { display: none; }
   .navbar__menu {

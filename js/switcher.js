@@ -1,93 +1,6 @@
-// Atmen — Padecimientos: explorador de chips + panel único (progressive enhancement).
-// Sin JS: degrada al acordeón nativo <details>. Con JS: chips (scroll horizontal en
-// móvil, wrap en desktop) + un solo panel visible. Robusto y compacto.
-(function () {
-  function enhance(root) {
-    const items = Array.from(root.querySelectorAll('.sw-item'));
-    if (items.length < 2) return;
+// Atmen — FAQ acordeón (un panel a la vez) + ficha modal de padecimientos.
 
-    const tablist = document.createElement('div');
-    tablist.className = 'cond-tabs';
-    tablist.setAttribute('role', 'tablist');
-    tablist.setAttribute('aria-label', 'Padecimientos que trato');
-
-    const panels = document.createElement('div');
-    panels.className = 'cond-panels';
-
-    const tabs = [];
-    const pans = [];
-
-    items.forEach((it, i) => {
-      const numEl = it.querySelector('.sw-num');
-      const nameEl = it.querySelector('.sw-name');
-      const detail = it.querySelector('.sw-detail');
-      if (!nameEl || !detail) return;
-      const num = numEl ? numEl.textContent.trim() : String(i + 1);
-      const name = nameEl.textContent.trim();
-
-      const tabId = 'cond-tab-' + i;
-      const panId = 'cond-pan-' + i;
-
-      const tab = document.createElement('button');
-      tab.type = 'button';
-      tab.className = 'cond-tab';
-      tab.id = tabId;
-      tab.setAttribute('role', 'tab');
-      tab.setAttribute('aria-controls', panId);
-      tab.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
-      tab.tabIndex = i === 0 ? 0 : -1;
-      tab.innerHTML = '<span class="cond-tab__n">' + num + '</span><span>' + name + '</span>';
-
-      const pan = document.createElement('div');
-      pan.className = 'cond-panel';
-      pan.id = panId;
-      pan.setAttribute('role', 'tabpanel');
-      pan.setAttribute('aria-labelledby', tabId);
-      pan.hidden = i !== 0;
-      pan.appendChild(detail); // mueve el nodo de detalle existente
-
-      tab.addEventListener('click', () => activate(i));
-      tablist.appendChild(tab);
-      panels.appendChild(pan);
-      tabs.push(tab);
-      pans.push(pan);
-    });
-
-    function activate(i) {
-      tabs.forEach((t, k) => {
-        const on = k === i;
-        t.setAttribute('aria-selected', on ? 'true' : 'false');
-        t.tabIndex = on ? 0 : -1;
-        pans[k].hidden = !on;
-      });
-      // centra el chip activo en móvil
-      tabs[i].scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
-    }
-
-    tablist.addEventListener('keydown', (e) => {
-      const i = tabs.indexOf(document.activeElement);
-      if (i < 0) return;
-      let n = i;
-      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') n = (i + 1) % tabs.length;
-      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') n = (i - 1 + tabs.length) % tabs.length;
-      else if (e.key === 'Home') n = 0;
-      else if (e.key === 'End') n = tabs.length - 1;
-      else return;
-      e.preventDefault();
-      activate(n);
-      tabs[n].focus();
-    });
-
-    root.innerHTML = '';
-    root.appendChild(tablist);
-    root.appendChild(panels);
-    root.classList.add('is-enhanced');
-  }
-
-  document.querySelectorAll('[data-switcher]').forEach(enhance);
-})();
-
-// FAQ single-open (acordeón landing)
+// FAQ: un solo panel abierto
 (function () {
   const list = document.querySelector('[data-faq]');
   if (!list) return;
@@ -95,4 +8,77 @@
   items.forEach((it) => it.addEventListener('toggle', () => {
     if (it.open) items.forEach((o) => { if (o !== it && o.open) o.open = false; });
   }));
+})();
+
+// Padecimientos: tarjeta → ficha modal (síntomas, diagnóstico, qué esperar) en la misma página
+(function () {
+  const modal = document.getElementById('dxModal');
+  const cards = Array.from(document.querySelectorAll('.dx-card[data-dx]'));
+  if (!cards.length) return;
+
+  const fichas = {};
+  document.querySelectorAll('.dx-ficha').forEach((f) => { fichas[f.dataset.dx] = f; });
+
+  // Sin soporte de <dialog>: la tarjeta lleva a la guía de FAQ
+  if (!modal || typeof modal.showModal !== 'function') {
+    cards.forEach((c) => c.addEventListener('click', () => {
+      location.href = 'preguntas-frecuentes/index.html#' + c.dataset.dx;
+    }));
+    return;
+  }
+
+  const head = document.getElementById('dxModalHead');
+  const ic = document.getElementById('dxModalIc');
+  const tag = document.getElementById('dxModalTag');
+  const title = document.getElementById('dxModalTitle');
+  const content = document.getElementById('dxModalContent');
+  const moreLink = document.getElementById('dxMoreLink');
+  const agBtn = document.getElementById('dxAgendarBtn');
+  const agMenu = document.getElementById('dxAgendarMenu');
+  let lastFocus = null;
+
+  function closeAgendar() {
+    if (!agMenu) return;
+    agMenu.hidden = true;
+    if (agBtn) agBtn.setAttribute('aria-expanded', 'false');
+  }
+  if (agBtn && agMenu) {
+    agBtn.addEventListener('click', () => {
+      const willOpen = agMenu.hidden;
+      agMenu.hidden = !willOpen;
+      agBtn.setAttribute('aria-expanded', String(willOpen));
+      if (willOpen) { const fi = agMenu.querySelector('[role="menuitem"]'); if (fi) fi.focus(); }
+    });
+  }
+
+  function open(slug) {
+    const f = fichas[slug];
+    if (!f) return;
+    const iconEl = f.querySelector('.dx-ficha__icon');
+    const lead = f.querySelector('.dx-modal__lead');
+    const points = f.querySelector('.dx-points');
+    ic.innerHTML = iconEl ? iconEl.innerHTML : '';
+    tag.textContent = f.dataset.tag || '';
+    title.textContent = f.dataset.name || '';
+    head.classList.toggle('is-leaf', f.dataset.leaf === '1');
+    content.innerHTML = (lead ? lead.outerHTML : '') + (points ? points.outerHTML : '');
+    if (moreLink) moreLink.href = 'preguntas-frecuentes/index.html#' + slug;
+    closeAgendar();
+    if (!modal.open) {
+      lastFocus = document.activeElement;
+      modal.showModal();
+    }
+    const closeBtn = modal.querySelector('[data-dx-close]');
+    if (closeBtn) closeBtn.focus();
+  }
+
+  cards.forEach((c) => c.addEventListener('click', () => open(c.dataset.dx)));
+  modal.querySelectorAll('[data-dx-close]').forEach((b) => b.addEventListener('click', () => modal.close()));
+
+  // Cerrar al hacer clic en el backdrop (fuera del cuadro)
+  modal.addEventListener('click', (e) => {
+    const r = modal.getBoundingClientRect();
+    if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) modal.close();
+  });
+  modal.addEventListener('close', () => { if (lastFocus && lastFocus.focus) lastFocus.focus(); });
 })();
