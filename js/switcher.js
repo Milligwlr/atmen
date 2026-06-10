@@ -33,23 +33,7 @@
   const title = document.getElementById('dxModalTitle');
   const content = document.getElementById('dxModalContent');
   const moreLink = document.getElementById('dxMoreLink');
-  const agBtn = document.getElementById('dxAgendarBtn');
-  const agMenu = document.getElementById('dxAgendarMenu');
   let lastFocus = null;
-
-  function closeAgendar() {
-    if (!agMenu) return;
-    agMenu.hidden = true;
-    if (agBtn) agBtn.setAttribute('aria-expanded', 'false');
-  }
-  if (agBtn && agMenu) {
-    agBtn.addEventListener('click', () => {
-      const willOpen = agMenu.hidden;
-      agMenu.hidden = !willOpen;
-      agBtn.setAttribute('aria-expanded', String(willOpen));
-      if (willOpen) { const fi = agMenu.querySelector('[role="menuitem"]'); if (fi) fi.focus(); }
-    });
-  }
 
   function open(slug) {
     const f = fichas[slug];
@@ -65,7 +49,6 @@
     if (cp) modal.style.setProperty('--cp', cp); else modal.style.removeProperty('--cp');
     content.innerHTML = (lead ? lead.outerHTML : '') + (points ? points.outerHTML : '');
     if (moreLink) moreLink.href = 'preguntas-frecuentes/index.html#' + slug;
-    closeAgendar();
     if (!modal.open) {
       lastFocus = document.activeElement;
       modal.showModal();
