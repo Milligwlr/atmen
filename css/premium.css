@@ -2821,7 +2821,6 @@ footer {
 .dx-card[data-dx="disnea"]          { --cp: var(--pine); }
 .dx-card[data-dx="apnea-del-sueno"] { --cp: var(--ocean-deep); }
 .dx-card[data-dx="tabaquismo"]      { --cp: var(--leaf); }
-.dx-card[data-dx="post-covid"]      { --cp: var(--leaf-deep); }
 .dx-card[data-dx="cancer-pulmon"]   { --cp: var(--ocean); }
 .dx-card[data-dx="derrame-pleural"] { --cp: var(--bay); }
 .dx-card[data-dx="broncoscopia"]    { --cp: var(--sea); }
