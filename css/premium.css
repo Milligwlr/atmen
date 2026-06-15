@@ -1874,7 +1874,7 @@ html { scroll-padding-top: 88px; }
    Mobile: details nativo. Desktop (>=900): JS upgrade a tabs.
    ========================================================= */
 
-.switcher-section { padding: 56px 22px; background: var(--paper-warm); }
+.switcher-section { padding: 56px 22px; background: linear-gradient(180deg, var(--paper) 0%, var(--cloud) 100%); }
 .switcher-section__head { max-width: 720px; margin: 0 auto 28px; }
 .switcher-section__h {
   font-family: var(--font-display);
@@ -2270,18 +2270,16 @@ html { scroll-padding-top: 88px; }
 
 /* --- 2. Servicios: carrusel horizontal en móvil (menos scroll vertical) --- */
 @media (max-width: 720px) {
+  /* Lista vertical en móvil (evita el swipe horizontal que ocultaba estudios). */
   .services-grid {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 84%;
-    grid-template-columns: none !important;
-    gap: 12px;
-    overflow-x: auto; -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory; scrollbar-width: none;
-    margin-inline: -16px; padding: 4px 16px 14px;
+    grid-template-columns: 1fr !important;
+    grid-auto-flow: row;
+    gap: 14px;
+    overflow-x: visible;
+    margin-inline: 0; padding: 0;
   }
-  .services-grid::-webkit-scrollbar { display: none; }
-  .service-card { scroll-snap-align: center; height: auto; }
+  .service-card { height: auto; }
 }
 
 /* --- 3. Video Once Noticias: nunca desbordar en móvil --- */
@@ -2726,43 +2724,61 @@ footer {
 
 /* 5. Tarjetas de padecimientos: menos texto, más visuales */
 .dx-grid {
-  max-width: 1100px; margin: 0 auto;
-  display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr);
+  max-width: 1040px; margin: 0 auto;
+  display: grid; gap: 16px; grid-template-columns: 1fr;
 }
-@media (min-width: 700px) { .dx-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1000px) { .dx-grid { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 560px) { .dx-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 920px) { .dx-grid { grid-template-columns: repeat(3, 1fr); } } /* 3×3 simétrico */
+/* dx-cards estilo "alveos" adaptado a la paleta Respira Mejor:
+   etiqueta de categoría + pregunta por síntoma + acciones (Saber más / Preguntar). */
 .dx-card {
+  --cp: var(--sea);
   position: relative; overflow: hidden; isolation: isolate;
-  display: flex; flex-direction: column; gap: 9px;
-  padding: 18px 16px 16px;
+  display: flex; flex-direction: column; gap: 7px;
+  padding: 20px 17px 16px;
   background: #fff; border: 1px solid var(--line-soft);
-  border-radius: 16px; text-decoration: none; color: var(--ink);
+  border-radius: 16px; text-align: left; color: var(--ink); cursor: pointer;
   box-shadow: 0 10px 26px -20px rgba(2,62,138,.4);
   transition: transform .28s var(--ease), box-shadow .28s var(--ease), border-color .28s var(--ease);
 }
 .dx-card::before {
   content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
-  background: linear-gradient(90deg, var(--sea), var(--sky));
-  transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease);
+  background: linear-gradient(90deg, var(--cp), color-mix(in oklab, var(--cp) 55%, #fff));
 }
-.dx-card--leaf::before { background: linear-gradient(90deg, var(--leaf-deep), var(--leaf)); }
-.dx-card:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -24px rgba(2,62,138,.4); border-color: rgba(0,180,216,.34); color: var(--ink); }
-.dx-card:hover::before { transform: scaleX(1); }
-.dx-card:focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; }
+.dx-card:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -24px color-mix(in oklab, var(--cp) 42%, transparent); border-color: color-mix(in oklab, var(--cp) 40%, transparent); }
+.dx-card:focus-within { outline: 3px solid color-mix(in oklab, var(--cp) 60%, var(--sky)); outline-offset: 2px; }
+.dx-card__cat {
+  font-size: 10.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
+  color: color-mix(in oklab, var(--cp) 78%, #000);
+}
 .dx-card__ic {
-  width: 44px; height: 44px; border-radius: 12px;
+  width: 40px; height: 40px; border-radius: 11px; margin-top: 2px;
   display: grid; place-items: center;
-  background: linear-gradient(135deg, var(--sea), var(--sky)); color: #fff;
-  box-shadow: 0 8px 18px -8px rgba(0,180,216,.55);
+  background: linear-gradient(135deg, var(--cp), color-mix(in oklab, var(--cp) 60%, #fff)); color: #fff;
+  box-shadow: 0 8px 18px -8px color-mix(in oklab, var(--cp) 55%, transparent);
 }
-.dx-card--leaf .dx-card__ic { background: linear-gradient(135deg, var(--leaf-deep), var(--leaf)); box-shadow: 0 8px 18px -8px rgba(6,167,125,.5); }
-.dx-card__ic svg { width: 24px; height: 24px; }
-.dx-card__name { font-weight: 700; font-size: 15px; letter-spacing: -.01em; line-height: 1.2; }
-.dx-card__tag { font-size: 11.5px; color: var(--ink-muted); line-height: 1.35; margin-top: auto; }
-.dx-card__go { position: absolute; top: 16px; right: 14px; color: var(--ink-muted); transition: transform .25s var(--ease), color .25s var(--ease); }
-.dx-card:hover .dx-card__go { color: var(--sea); transform: translateX(3px); }
+.dx-card__ic svg { width: 22px; height: 22px; }
+.dx-card__name { font-weight: 700; font-size: 16.5px; letter-spacing: -.01em; line-height: 1.15; color: var(--ink); margin: 3px 0 0; }
+.dx-card__q {
+  font-size: 13px; color: var(--ink-muted); line-height: 1.45; margin: 0; flex: 1 1 auto;
+  display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.dx-card__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.dx-card__more, .dx-card__ask {
+  display: inline-flex; align-items: center; justify-content: center; gap: 5px; white-space: nowrap;
+  font: inherit; font-size: 12px; font-weight: 700; line-height: 1; cursor: pointer;
+  padding: 8px 13px; border-radius: 999px; border: 1px solid var(--line-soft); background: #fff;
+  transition: background .2s var(--ease), border-color .2s var(--ease);
+}
+.dx-card__more { color: color-mix(in oklab, var(--cp) 78%, #000); border-color: color-mix(in oklab, var(--cp) 30%, var(--line-soft)); }
+.dx-card__more svg { width: 13px; height: 13px; transition: transform .2s var(--ease); }
+.dx-card__more:hover { background: color-mix(in oklab, var(--cp) 9%, #fff); border-color: color-mix(in oklab, var(--cp) 48%, transparent); }
+.dx-card:hover .dx-card__more svg { transform: translateX(2px); }
+.dx-card__ask { color: var(--leaf-deep); }
+.dx-card__ask svg { width: 15px; height: 15px; color: var(--leaf); }
+.dx-card__ask:hover { background: color-mix(in oklab, var(--leaf) 8%, #fff); border-color: color-mix(in oklab, var(--leaf) 50%, transparent); }
 @media (prefers-reduced-motion: reduce) {
-  .dx-card, .dx-card::before, .dx-card__go, .hero-stats__cell { transition: none; }
+  .dx-card, .dx-card::before, .dx-card__more svg, .hero-stats__cell { transition: none; }
 }
 
 /* =========================================================
@@ -2959,14 +2975,8 @@ body.dx-modal-open { position: fixed; inset: 0; width: 100%; overflow: hidden; }
             mask-image: linear-gradient(90deg, #000 92%, transparent);
   }
 }
-.svc-hint { display: none; }
-@media (max-width: 720px) {
-  .svc-hint {
-    display: flex; align-items: center; justify-content: center; gap: 6px;
-    margin: 4px auto 14px; font-size: 12px; font-weight: 600; color: var(--ocean);
-  }
-  .svc-hint__arrow { animation: cond-nudge 1.4s ease-in-out infinite; }
-}
+/* Sin carrusel: los estudios se apilan en vertical en móvil, ya no hay que deslizar. */
+.svc-hint { display: none !important; }
 @media (prefers-reduced-motion: reduce) { .svc-hint__arrow { animation: none; } }
 
 /* 5. "Cómo abordo cada caso" → timeline conectada */

@@ -346,60 +346,96 @@
         </div>
 
         <div class="dx-grid">
-          <button type="button" class="dx-card" data-dx="asma" aria-haspopup="dialog" aria-label="Asma: ver ficha">
+          <article class="dx-card" data-dx="asma" aria-label="Asma">
+            <span class="dx-card__cat">Vía aérea</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="7" height="11" rx="2"/><path d="M13 13h4a2 2 0 0 1 0 4h-4"/><path d="M8.6 10 7.6 5.6 12 4.6"/></svg></span>
-            <span class="dx-card__name">Asma</span>
-            <span class="dx-card__tag">Vías aéreas obstructivas</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <button type="button" class="dx-card" data-dx="epoc" aria-haspopup="dialog" aria-label="EPOC: ver ficha">
+            <h3 class="dx-card__name">Asma</h3>
+            <p class="dx-card__q">¿Silbidos al respirar, tos nocturna o falta de aire con el ejercicio o los alérgenos?</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20tengo%20una%20duda%20sobre%20asma" aria-label="Preguntar sobre asma por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
+          <article class="dx-card" data-dx="epoc" aria-label="EPOC">
+            <span class="dx-card__cat">Vía aérea</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v7"/><path d="M9 11c0-1.6-1.3-2.5-2.5-1.8C5 10 4.5 12.5 4.5 15c0 2 .4 4 2.3 4S9 17 9 15Z"/><path d="M15 11c0-1.6 1.3-2.5 2.5-1.8C19 10 19.5 12.5 19.5 15c0 2-.4 4-2.3 4S15 17 15 15Z"/></svg></span>
-            <span class="dx-card__name">EPOC</span>
-            <span class="dx-card__tag">Vías aéreas obstructivas</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <button type="button" class="dx-card" data-dx="tos-cronica" aria-haspopup="dialog" aria-label="Tos crónica: ver ficha">
+            <h3 class="dx-card__name">EPOC</h3>
+            <p class="dx-card__q">¿Te cansas al caminar o subir escaleras y tienes tos con flema? La EPOC avanza en silencio.</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20tengo%20una%20duda%20sobre%20EPOC" aria-label="Preguntar sobre EPOC por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
+          <article class="dx-card" data-dx="tos-cronica" aria-label="Tos crónica">
+            <span class="dx-card__cat">Respiratoria</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10a2.5 2.5 0 1 0-2.5-2.5"/><path d="M3 12h13a2.5 2.5 0 1 1-2.5 2.5"/><path d="M3 16h8a2 2 0 1 1-2 2"/></svg></span>
-            <span class="dx-card__name">Tos crónica</span>
-            <span class="dx-card__tag">Tos de más de 8 semanas</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <button type="button" class="dx-card" data-dx="disnea" aria-haspopup="dialog" aria-label="Disnea: ver ficha">
+            <h3 class="dx-card__name">Tos crónica</h3>
+            <p class="dx-card__q">¿Una tos que no se quita después de 8 semanas, a veces de noche o al acostarte?</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20tengo%20una%20duda%20sobre%20tos%20cr%C3%B3nica" aria-label="Preguntar sobre tos crónica por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
+          <article class="dx-card" data-dx="disnea" aria-label="Disnea">
+            <span class="dx-card__cat">Respiratoria</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-6 3.5 12 2.5-6H21"/></svg></span>
-            <span class="dx-card__name">Disnea</span>
-            <span class="dx-card__tag">Falta de aire</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <button type="button" class="dx-card" data-dx="apnea-del-sueno" aria-haspopup="dialog" aria-label="Apnea del sueño: ver ficha">
+            <h3 class="dx-card__name">Disnea</h3>
+            <p class="dx-card__q">¿Sensación de ahogo o falta de aire al esfuerzo, o incluso estando en reposo?</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20tengo%20una%20duda%20sobre%20disnea" aria-label="Preguntar sobre disnea por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
+          <article class="dx-card" data-dx="apnea-del-sueno" aria-label="Apnea del sueño">
+            <span class="dx-card__cat">Sueño</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5Z"/></svg></span>
-            <span class="dx-card__name">Apnea del sueño</span>
-            <span class="dx-card__tag">Ronquido y pausas</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <button type="button" class="dx-card" data-dx="tabaquismo" aria-haspopup="dialog" aria-label="Tabaquismo: ver ficha">
+            <h3 class="dx-card__name">Apnea del sueño</h3>
+            <p class="dx-card__q">¿Roncas fuerte, despiertas cansado o te han visto pausas al respirar mientras duermes?</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20tengo%20una%20duda%20sobre%20apnea%20del%20sue%C3%B1o" aria-label="Preguntar sobre apnea del sueño por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
+          <article class="dx-card" data-dx="tabaquismo" aria-label="Tabaquismo">
+            <span class="dx-card__cat">Prevención</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="14" width="13" height="3" rx="1"/><path d="M19 14v3M21.5 14v3"/><path d="M14 11c1-1 .5-2.2 0-3.2"/><path d="M17 10.2c1-1 .5-2.6 0-3.7"/></svg></span>
-            <span class="dx-card__name">Tabaquismo</span>
-            <span class="dx-card__tag">Dejar de fumar</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <button type="button" class="dx-card" data-dx="cancer-pulmon" aria-haspopup="dialog" aria-label="Cáncer de pulmón: ver ficha">
+            <h3 class="dx-card__name">Tabaquismo</h3>
+            <p class="dx-card__q">¿Quieres dejar de fumar y los intentos previos no han funcionado?</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20quiero%20dejar%20de%20fumar" aria-label="Preguntar sobre dejar de fumar por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
+          <article class="dx-card" data-dx="cancer-pulmon" aria-label="Cáncer de pulmón">
+            <span class="dx-card__cat">Oncología</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.4"/></svg></span>
-            <span class="dx-card__name">Cáncer de pulmón</span>
-            <span class="dx-card__tag">Tamizaje y diagnóstico</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <button type="button" class="dx-card" data-dx="derrame-pleural" aria-haspopup="dialog" aria-label="Derrame pleural: ver ficha">
+            <h3 class="dx-card__name">Cáncer de pulmón</h3>
+            <p class="dx-card__q">¿Tos persistente, sangre al toser o un nódulo encontrado en tus estudios?</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20tengo%20una%20duda%20sobre%20c%C3%A1ncer%20de%20pulm%C3%B3n" aria-label="Preguntar sobre cáncer de pulmón por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
+          <article class="dx-card" data-dx="derrame-pleural" aria-label="Derrame pleural">
+            <span class="dx-card__cat">Pleura</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.2 6 11a6 6 0 1 1-12 0c0-4.8 6-11 6-11Z"/></svg></span>
-            <span class="dx-card__name">Derrame pleural</span>
-            <span class="dx-card__tag">Líquido en la pleura</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
-          <button type="button" class="dx-card" data-dx="broncoscopia" aria-haspopup="dialog" aria-label="Broncoscopia: ver ficha">
+            <h3 class="dx-card__name">Derrame pleural</h3>
+            <p class="dx-card__q">¿Falta de aire en aumento y dolor en el costado al respirar?</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20tengo%20una%20duda%20sobre%20derrame%20pleural" aria-label="Preguntar sobre derrame pleural por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
+          <article class="dx-card" data-dx="broncoscopia" aria-label="Broncoscopia">
+            <span class="dx-card__cat">Estudio</span>
             <span class="dx-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m20 20-5.5-5.5"/></svg></span>
-            <span class="dx-card__name">Broncoscopia</span>
-            <span class="dx-card__tag">Estudio de vía aérea</span>
-            <span class="dx-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-          </button>
+            <h3 class="dx-card__name">Broncoscopia</h3>
+            <p class="dx-card__q">¿Necesitas explorar por dentro la vía aérea o tomar una muestra (biopsia)?</p>
+            <div class="dx-card__actions">
+              <button type="button" class="dx-card__more" data-dx-open aria-haspopup="dialog">Saber más<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <a class="dx-card__ask" href="https://wa.me/5215614838970?text=Hola%2C%20tengo%20una%20duda%20sobre%20broncoscopia" aria-label="Preguntar sobre broncoscopia por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>Preguntar</a>
+            </div>
+          </article>
         </div>
 
         <div class="dx-fichas" hidden>
@@ -673,7 +709,7 @@
         <div class="wall__lh">
           <p class="atmen-kicker">Reseñas verificadas</p>
           <h2 id="wall-title" class="wall__h headline">Lo que dicen <em>131 pacientes.</em></h2>
-          <p class="wall__sub">Reseñas verbatim verificables en Doctoralia. Sin curaduría, sin retoque. Hover sobre una fila para pausarla.</p>
+          <p class="wall__sub">Reseñas verbatim verificables en Doctoralia. Sin curaduría, sin retoque.</p>
         </div>
         <div class="wall__meta">
           <div class="wall__mt"><b>4.9</b><span>★★★★★ Doctoralia</span></div>

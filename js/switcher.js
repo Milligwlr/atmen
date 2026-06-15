@@ -76,6 +76,8 @@
   }
 
   cards.forEach((c) => c.addEventListener('click', () => open(c.dataset.dx)));
+  // El enlace "Preguntar" (WhatsApp) no debe abrir además la ficha.
+  document.querySelectorAll('.dx-card__ask').forEach((a) => a.addEventListener('click', (e) => e.stopPropagation()));
   modal.querySelectorAll('[data-dx-close]').forEach((b) => b.addEventListener('click', () => modal.close()));
 
   // Cerrar al tocar el backdrop (el área del propio <dialog>, fuera del cuadro).
