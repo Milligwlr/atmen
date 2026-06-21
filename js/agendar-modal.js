@@ -9,6 +9,9 @@
 
   function openModal(trigger) {
     lastFocus = trigger || document.activeElement;
+    var agSource = (trigger && trigger.getAttribute && trigger.getAttribute('data-cta')) || 'desconocido';
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'agenda_modal_open', source: agSource });
     if (supportsDialog) {
       if (!modal.open) modal.showModal();
     } else {

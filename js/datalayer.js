@@ -18,9 +18,9 @@
   }
 
   // Reenvía a GA4 (gtag) si el tag está cargado; si no, solo deja el evento en dataLayer.
-  function ga(name, params) {
-    if (typeof window.gtag === 'function') window.gtag('event', name, params);
-  }
+  // GA4 ahora se gestiona vía GTM (contenedor GTM-M7STX283).
+  // Sin envío directo a gtag para evitar doble conteo; GTM escucha estos eventos del dataLayer.
+  function ga(name, params) { /* no-op: gestionado por GTM */ }
 
   function pushCta(type, label) {
     var lbl = (label || '').substring(0, 60).trim();
