@@ -408,3 +408,85 @@
   box-shadow: 0 8px 18px -8px rgba(37,211,102,.7);
 }
 .sticky-cta__wa svg { width: 24px; height: 24px; }
+
+/* =========================================================
+   ===  Ajustes UI/UX v8 (ui-ux-pro-max)                  ===
+   Foto del doctor más grande · reseñas en carrusel (menos
+   scroll) · FAQ más legible · CTA final con 2 sedes.
+   ========================================================= */
+
+/* --- Foto del doctor más grande en el hero --- */
+.promo-doctor { gap: 14px; }
+.promo-doctor__photo {
+  width: 88px; height: 88px;
+  border: 3px solid #fff;
+  outline: 1px solid var(--line-soft);
+  box-shadow: 0 14px 30px -12px rgba(2,62,138,.55);
+}
+.promo-doctor__id b { font-size: 16px; }
+.promo-doctor__id span { font-size: 13px; }
+@media (min-width: 900px) { .promo-doctor__photo { width: 96px; height: 96px; } }
+
+/* --- Reseñas: carrusel deslizable en móvil (menos scroll vertical) --- */
+.t-hint { display: none; margin: 0 0 12px; text-align: right;
+  font-size: 12.5px; font-weight: 700; color: var(--sea); letter-spacing: .02em; }
+.t-hint span { display: inline-block; animation: tHintNudge 1.4s var(--ease) infinite; }
+@keyframes tHintNudge { 0%,100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+@media (max-width: 760px) {
+  .t-hint { display: block; }
+  .testimonials-grid {
+    display: grid; grid-auto-flow: column;
+    grid-template-columns: none; grid-auto-columns: 86%;
+    gap: 12px; overflow-x: auto;
+    scroll-snap-type: x mandatory; scroll-padding-inline: 22px;
+    margin-inline: -22px; padding: 4px 22px 14px;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .testimonials-grid::-webkit-scrollbar { display: none; }
+  .testimonials-grid > .t-card { scroll-snap-align: center; height: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .t-hint span { animation: none; } }
+
+/* --- FAQ: formato más legible y táctil --- */
+.faq-accordion__list { gap: 12px; }
+.faq-item {
+  border-radius: 16px;
+  box-shadow: 0 10px 26px -22px rgba(2,40,80,.42);
+}
+.faq-accordion .faq-item summary {
+  padding: 20px 60px 20px 22px; min-height: 60px; align-items: center;
+}
+.faq-q { font-size: 16px; font-weight: 700; color: var(--ink); line-height: 1.35; }
+.faq-item[open] {
+  border-color: rgba(0,180,216,.35);
+  background: linear-gradient(180deg, #fff, color-mix(in oklab, var(--sea) 5%, #fff));
+}
+.faq-item[open] .faq-q { color: var(--ocean); }
+.faq-a { padding: 0 22px 20px; }
+.faq-a p { font-size: 14.5px; line-height: 1.62; color: var(--ink-muted); }
+.faq-item[open] .faq-a { animation: faqReveal .28s var(--ease) both; }
+@keyframes faqReveal { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.faq-accordion .faq-chev { width: 30px; height: 30px; }
+@media (prefers-reduced-motion: reduce) { .faq-item[open] .faq-a { animation: none; } }
+
+/* --- CTA final: dos sedes visibles (tarjetas glass sobre el aurora) --- */
+.cta-sedes {
+  list-style: none; margin: 28px auto 0; padding: 0; max-width: 560px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+}
+.cta-sede {
+  display: flex; align-items: center; gap: 12px; text-align: left;
+  padding: 14px 16px; border-radius: 14px;
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.28);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+}
+.cta-sede__ic {
+  flex: 0 0 auto; width: 38px; height: 38px; border-radius: 11px;
+  display: grid; place-items: center;
+  background: rgba(255,255,255,.16); color: #fff;
+}
+.cta-sede__ic svg { width: 20px; height: 20px; }
+.cta-sede__txt { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+.cta-sede__txt b { color: #fff; font-size: 15px; font-weight: 800; }
+.cta-sede__txt span { color: rgba(255,255,255,.85); font-size: 12.5px; }
+@media (max-width: 560px) { .cta-sedes { grid-template-columns: 1fr; max-width: 420px; } }
